@@ -101,45 +101,45 @@ ol {
 }
 
 .social-discord {
-  background-image: url('/wp-content/themes/harmony/img/icons/discord-red.png');
+  background-image: url('https://renangreca.github.io/Shinesparkers-Harmony/wp-content/themes/harmony/img/icons/discord-red.png');
 }
 .social-discord:hover{
-  background-image: url('/wp-content/themes/harmony/img/icons/discord-blue.png');
+  background-image: url('https://renangreca.github.io/Shinesparkers-Harmony/wp-content/themes/harmony/img/icons/discord-blue.png');
 }
 
 .social-fb {
-  background-image: url('/wp-content/themes/harmony/img/icons/facebook-red.png');
+  background-image: url('https://renangreca.github.io/Shinesparkers-Harmony/wp-content/themes/harmony/img/icons/facebook-red.png');
 }
 .social-fb:hover{
-  background-image: url('/wp-content/themes/harmony/img/icons/facebook-blue.png');
+  background-image: url('https://renangreca.github.io/Shinesparkers-Harmony/wp-content/themes/harmony/img/icons/facebook-blue.png');
 }
 
 .social-ig {
-  background-image: url('/wp-content/themes/harmony/img/icons/instagram-red.png');
+  background-image: url('https://renangreca.github.io/Shinesparkers-Harmony/wp-content/themes/harmony/img/icons/instagram-red.png');
 }
 .social-ig:hover{
-  background-image: url('/wp-content/themes/harmony/img/icons/instagram-blue.png');
+  background-image: url('https://renangreca.github.io/Shinesparkers-Harmony/wp-content/themes/harmony/img/icons/instagram-blue.png');
 }
 
 .social-tw {
-  background-image: url('/wp-content/themes/harmony/img/icons/twitter-red.png');
+  background-image: url('https://renangreca.github.io/Shinesparkers-Harmony/wp-content/themes/harmony/img/icons/twitter-red.png');
 }
 .social-tw:hover{
-  background-image: url('/wp-content/themes/harmony/img/icons/twitter-blue.png');
+  background-image: url('https://renangreca.github.io/Shinesparkers-Harmony/wp-content/themes/harmony/img/icons/twitter-blue.png');
 }
 
 .social-yt {
-  background-image: url('/wp-content/themes/harmony/img/icons/youtube-red.png');
+  background-image: url('https://renangreca.github.io/Shinesparkers-Harmony/wp-content/themes/harmony/img/icons/youtube-red.png');
 }
 .social-yt:hover{
-  background-image: url('/wp-content/themes/harmony/img/icons/youtube-blue.png');
+  background-image: url('https://renangreca.github.io/Shinesparkers-Harmony/wp-content/themes/harmony/img/icons/youtube-blue.png');
 }
 
 .social-twitch {
-  background-image: url('/wp-content/themes/harmony/img/icons/twitch-red.png');
+  background-image: url('https://renangreca.github.io/Shinesparkers-Harmony/wp-content/themes/harmony/img/icons/twitch-red.png');
 }
 .social-twitch:hover{
-  background-image: url('/wp-content/themes/harmony/img/icons/twitch-blue.png');
+  background-image: url('https://renangreca.github.io/Shinesparkers-Harmony/wp-content/themes/harmony/img/icons/twitch-blue.png');
 }
 
 
@@ -554,7 +554,7 @@ a:hover
   padding: 20px 0;
 }
 
-/*@import url('/wp-content/themes/harmony/css/list.css');*/
+/*@import url('https://renangreca.github.io/Shinesparkers-Harmony/wp-content/themes/harmony/css/list.css');*/
 .archive-list {
   margin: 0 auto;
   margin-bottom: 50px;
@@ -708,7 +708,7 @@ a:hover
   }
 }
 
-/*@import url('/wp-content/themes/harmony/css/sidebar.css');*/
+/*@import url('https://renangreca.github.io/Shinesparkers-Harmony/wp-content/themes/harmony/css/sidebar.css');*/
 .sidebar-line {
   height: 2px;
   width: 100%;
@@ -811,7 +811,7 @@ a:hover
   margin: 10px auto;
 }
 
-/*@import url('/wp-content/themes/harmony/css/footer.css');*/
+/*@import url('https://renangreca.github.io/Shinesparkers-Harmony/wp-content/themes/harmony/css/footer.css');*/
 footer {
   margin: 50px auto;
   height: 100px;

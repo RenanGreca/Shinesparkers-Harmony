@@ -88,9 +88,9 @@ minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
             <li>
               <!-- <a href="https://discordapp.com/invite/cbsTx69" class="social-icon social-discord" target="_blank"></a> -->
               <!-- <a href="https://facebook.com/nintendofusion" class="social-icon social-fb" target="_blank"></a> -->
-              <a href="https://instagram.com/neofusionbr" class="social-icon social-ig" target="_blank"></a>
+              <!-- <a href="https://instagram.com/neofusionbr" class="social-icon social-ig" target="_blank"></a>
               <a href="https://twitter.com/NeoFusionBR" class="social-icon social-tw" target="_blank"></a>
-              <a href="https://www.youtube.com/channel/UCU74wc5ncqwjjoXhdw53DSA" class="social-icon social-yt" target="_blank"></a>
+              <a href="https://www.youtube.com/channel/UCU74wc5ncqwjjoXhdw53DSA" class="social-icon social-yt" target="_blank"></a> -->
               <!-- <a href="https://twitch.tv/ninfusionbr" class="social-icon social-twitch" target="_blank"></a> -->
             </li>
           </ul>
@@ -107,14 +107,12 @@ minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
               <!-- <li><a href="https://facebook.com/nintendofusion" class="social-icon social-fb" target="_blank"> -->
                 <!-- <img class="social-icon" src="<?php echo get_bloginfo('template_url') ?>/img/icons/facebook-red.png"> -->
               <!-- </a></li> -->
-              <li><a href="https://instagram.com/neofusionbr" class="social-icon social-ig" target="_blank">
+              <!-- <li><a href="https://instagram.com/neofusionbr" class="social-icon social-ig" target="_blank">
               </a></li>
               <li><a href="https://twitter.com/NeoFusionBR" class="social-icon social-tw" target="_blank">
-                <!-- <img  src="<?php echo get_bloginfo('template_url') ?>/img/icons/twitter-red.png"> -->
               </a></li>
               <li><a href="https://www.youtube.com/channel/UCU74wc5ncqwjjoXhdw53DSA" class="social-icon social-yt" target="_blank">
-                <!-- <img class="social-icon" src="<?php echo get_bloginfo('template_url') ?>/img/icons/youtube-red.png"> -->
-              </a></li>
+              </a></li> -->
               <!-- <li><a href="https://twitch.tv/ninfusionbr" class="social-icon social-twitch" target="_blank">
               </a></li> -->
 

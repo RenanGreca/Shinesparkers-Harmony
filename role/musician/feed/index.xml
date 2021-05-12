@@ -10,7 +10,7 @@
 <channel>
 	<title>Musician &#8211; Harmony of Shinesparkers</title>
 	<atom:link href="http://192.168.1.128/role/musician/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<link>https://renangreca.github.io/Shinesparkers-Harmony/</link>
 	<description>Just another WordPress site</description>
 	<lastBuildDate>Wed, 12 May 2021 08:04:01 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,19 +21,19 @@
 	<generator>https://wordpress.org/?v=5.7.1</generator>
 
 <image>
-	<url>/wp-content/uploads/2021/04/cropped-hunter_cover-32x32.jpg</url>
+	<url>https://renangreca.github.io/Shinesparkers-Harmony/wp-content/uploads/2021/04/cropped-hunter_cover-32x32.jpg</url>
 	<title>Musician &#8211; Harmony of Shinesparkers</title>
-	<link>/</link>
+	<link>https://renangreca.github.io/Shinesparkers-Harmony/</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>Bernardo Limon</title>
-		<link>/staff/bernardo-limon/</link>
+		<link>https://renangreca.github.io/Shinesparkers-Harmony/staff/bernardo-limon/</link>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Thu, 06 May 2021 09:50:25 +0000</pubDate>
-				<guid isPermaLink="false">/?post_type=musician&#038;p=103</guid>
+				<guid isPermaLink="false">https://renangreca.github.io/Shinesparkers-Harmony/?post_type=musician&#038;p=103</guid>
 
 					<description><![CDATA[]]></description>
 										<content:encoded><![CDATA[]]></content:encoded>
@@ -43,7 +43,7 @@
 			</item>
 		<item>
 		<title>Sebastian Mårtensson</title>
-		<link>/staff/sebastian-martensson/</link>
+		<link>https://renangreca.github.io/Shinesparkers-Harmony/staff/sebastian-martensson/</link>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 05 Feb 2021 14:36:37 +0000</pubDate>

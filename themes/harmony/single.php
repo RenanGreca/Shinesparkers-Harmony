@@ -74,7 +74,7 @@ if ($post->post_type == "album") {
   
   // Find tracks that belong to this album
   $args = array(
-    'numberposts'      => 30,
+    'numberposts'      => 200,
     'post_type'        => 'track',
     'post_status'      => 'publish',
     'meta_key'         => 'album',
@@ -88,8 +88,8 @@ if ($post->post_type == "album") {
     $a_trackno = get_post_meta( $a->ID, 'track_no', true);
     $b_trackno = get_post_meta( $b->ID, 'track_no', true);
     
-    $a_groupno = get_post_meta( $a->ID, 'group', true);
-    $b_groupno = get_post_meta( $b->ID, 'group', true);
+    $a_groupno = get_post_meta( $a->ID, 'group_no', true);
+    $b_groupno = get_post_meta( $b->ID, 'group_no', true);
     
     return ($a_groupno > $b_groupno) || (($a_groupno == $b_groupno) && ($a_trackno > $b_trackno));
   });
@@ -101,7 +101,7 @@ if ($post->post_type == "album") {
   <?php
   foreach ($tracks as $post):
     // $post = $tracks[$i];
-    // setup_postdata($post);
+    setup_postdata($post);
     
     $track_fields = get_post_custom();
     $track_no = $track_fields["track_no"][0];
@@ -129,32 +129,32 @@ if ($post->post_type == "album") {
         <?php 
         
         echo "by ";
-        $musicians = explode(';', $track_fields["musician"][0]);
+        $musicians = explode(',', $track_fields["musician"][0]);
         $list = [];
         // print_r($musicians);
         foreach ($musicians as $musician) {
           $musician = trim($musician);
-          $results = $wpdb->get_results( "SELECT * FROM $wpdb->posts WHERE `post_type`='musician' AND `post_title`='$musician'" );
+          $results = $wpdb->get_results( "SELECT * FROM $wpdb->posts WHERE `post_type`='staff' AND `post_title`='$musician'" );
           // print_r($results);
           
-          $list[] = '<a href="'.$results[0]->guid.'">'.$results[0]->post_title.'</a>';
+          $list[] = '<a href="'.get_permalink($results[0]->ID).'">'.$results[0]->post_title.'</a>';
         }
 
         echo implode(", ", $list);
         
-        $musicians = explode(';', $track_fields["feat"][0]);
+        $musicians = explode(',', $track_fields["feat"][0]);
         if (strlen($musicians[0]) > 0) {
           echo " feat. ";
         }
+        $list = [];
         foreach ($musicians as $musician) {
           $musician = trim($musician);
-          $results = $wpdb->get_results( "SELECT * FROM $wpdb->posts WHERE `post_type`='musician' AND `post_title`='$musician'" );
+          $results = $wpdb->get_results( "SELECT * FROM $wpdb->posts WHERE `post_type`='staff' AND `post_title`='$musician'" );
           // echo $track_fields["musician"][0]; 
-          ?>
-          <a href="<?php echo $results[0]->guid; ?>"> <?php echo $results[0]->post_title; ?> </a>
-          <?php
+          $list[] = '<a href="'.get_permalink($results[0]->ID).'">'.$results[0]->post_title.'</a>';
           
         }
+        echo implode(", ", $list);
         echo "<br> Based on ";
         echo $track_fields["source"][0] . " (" . $track_fields["original_game"][0] . ")";
         ?>
@@ -242,7 +242,7 @@ if ($post->post_type == "track") {
     }
   </style>
 
-  <a href="<?php echo $album->guid; ?>">
+  <a href="<?php the_permalink($album->ID); ?>">
     <div class="track-album">
       <div class="track-album-cover">
         <img src="<?php echo $image; ?>" />
@@ -266,32 +266,32 @@ if ($post->post_type == "track") {
   <?php 
         
   // echo "• By ";
-  $musicians = explode(';', $track_fields["musician"][0]);
+  $musicians = explode(',', $track_fields["musician"][0]);
   $list = [];
   foreach ($musicians as $musician) {
     $musician = trim($musician);
-    $results = $wpdb->get_results( "SELECT * FROM $wpdb->posts WHERE `post_type`='musician' AND `post_title`='$musician'" );
+    $results = $wpdb->get_results( "SELECT * FROM $wpdb->posts WHERE `post_type`='staff' AND `post_title`='$musician'" );
     // echo $track_fields["musician"][0];
 
-    $list[] = '<a href="'.$results[0]->guid.'">'.$results[0]->post_title.'</a>';
+    $list[] = '<a href="'.get_permalink($results[0]->ID).'">'.$results[0]->post_title.'</a>';
     
   }
 
   echo implode(", ", $list).'<br>';
   
-  $musicians = explode(';', $track_fields["feat"][0]);
+  $musicians = explode(',', $track_fields["feat"][0]);
   if (strlen($musicians[0]) > 0) {
     echo " feat. ";
   }
+  $list = [];
   foreach ($musicians as $musician) {
     $musician = trim($musician);
-    $results = $wpdb->get_results( "SELECT * FROM $wpdb->posts WHERE `post_type`='musician' AND `post_title`='$musician'" );
+    $results = $wpdb->get_results( "SELECT * FROM $wpdb->posts WHERE `post_type`='staff' AND `post_title`='$musician'" );
     // echo $track_fields["musician"][0]; 
-    ?>
-    <a href="<?php echo $results[0]->guid; ?>"> <?php echo $results[0]->post_title; ?> </a>
-    <?php
+    $list[] = '<a href="'.get_permalink($results[0]->ID).'">'.$results[0]->post_title.'</a>';
     
   }
+  echo implode(", ", $list).'<br>';
   echo "Source: ";
   echo $track_fields["source"][0] . " (" . $track_fields["original_game"][0] . ")";
   
@@ -331,7 +331,7 @@ if ($post->post_type == "track") {
 }
 
 
-if ($post->post_type == "musician") {
+if ($post->post_type == "staff") {
   // Find tracks that belong to this album
   $musician = $post->post_title;
   $args = array(
@@ -398,7 +398,7 @@ if ($post->post_type == "musician") {
     <div class="album-track" style="background: rgb(255 255 255 / <?php echo ( ($i % 2 == 0 ) ? "5%" : "0%" ); ?> );">
       <div class="album-track-info">
         <h4>
-          <a href="<?php the_permalink(); ?>">
+          <a href="<?php get_permalink(); ?>">
           <?php 
           the_title(); ?>
           </a>
@@ -411,36 +411,35 @@ if ($post->post_type == "musician") {
         $results = $wpdb->get_results( "SELECT * FROM $wpdb->posts WHERE `post_type`='album' AND `post_title`='$album'" );
         // echo $meta_fields["musician"][0]; 
         ?>
-        <a href="<?php echo $results[0]->guid; ?>"> <?php echo $results[0]->post_title; ?> </a><br/>
+        <a href="<?php echo get_permalink($results[0]->ID); ?>"> <?php echo $results[0]->post_title; ?> </a><br/>
         <?php
 
         echo "by ";
-        $musicians = explode(';', $track_fields["musician"][0]);
+        $musicians = explode(',', $track_fields["musician"][0]);
         $list = [];
         // print_r($musicians);
         foreach ($musicians as $musician) {
           $musician = trim($musician);
-          $results = $wpdb->get_results( "SELECT * FROM $wpdb->posts WHERE `post_type`='musician' AND `post_title`='$musician'" );
+          $results = $wpdb->get_results( "SELECT * FROM $wpdb->posts WHERE `post_type`='staff' AND `post_title`='$musician'" );
           // print_r($results);
           
-          $list[] = '<a href="'.$results[0]->guid.'">'.$results[0]->post_title.'</a>';
+          $list[] = '<a href="'.get_permalink($results[0]->ID).'">'.$results[0]->post_title.'</a>';
         }
 
         echo implode(", ", $list);
         
-        $musicians = explode(';', $track_fields["feat"][0]);
+        $musicians = explode(',', $track_fields["feat"][0]);
         if (strlen($musicians[0]) > 0) {
           echo " feat. ";
         }
+        $list = [];
         foreach ($musicians as $musician) {
           $musician = trim($musician);
-          $results = $wpdb->get_results( "SELECT * FROM $wpdb->posts WHERE `post_type`='musician' AND `post_title`='$musician'" );
+          $results = $wpdb->get_results( "SELECT * FROM $wpdb->posts WHERE `post_type`='staff' AND `post_title`='$musician'" );
           // echo $track_fields["musician"][0]; 
-          ?>
-          <a href="<?php echo $results[0]->guid; ?>"> <?php echo $results[0]->post_title; ?> </a>
-          <?php
-          
+          $list[] = '<a href="'.get_permalink($results[0]->ID).'">'.$results[0]->post_title.'</a>';
         }
+        echo implode(", ", $list);
         echo "<br> Based on ";
         echo $track_fields["source"][0] . " (" . $track_fields["original_game"][0] . ")";
         ?>

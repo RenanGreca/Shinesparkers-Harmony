@@ -9,8 +9,8 @@ function read_csv($custom_post_type) {
   $data = array();
   $errors = array();
   
-  $file = site_url() . '/wp-content/uploads/2021/01/' . $custom_post_type . '.csv';
-      
+  $file = site_url() . '/wp-content/uploads/2021/05/' . $custom_post_type . '.csv';
+
   // Check if file is writable, then open it in 'read only' mode
   if ( $_file = fopen( $file, "r" ) ) {
       
@@ -59,6 +59,7 @@ function is_post_duplicate ( $title, $custom_post_type ) {
 function insert_posts( $custom_post_type, $slugs ) {
   // Get the data from all those CSVs!
   $posts = read_csv($custom_post_type);
+      
   
   foreach ( $posts as $post ) {
 
@@ -80,9 +81,17 @@ function insert_posts( $custom_post_type, $slugs ) {
           "post_title" => $post["title"],
           "post_content" => $post["description"],
           "post_type" => $custom_post_type,
-          "post_excerpt" => $post["excerpt"],
+        //   "post_excerpt" => $post["excerpt"],
           "post_status" => "publish"
       ));
+
+      add_action( "admin_notices", function() use ($post) {
+        echo "<div class='updated'>";
+        echo "<p>";
+        echo $post["id"];
+        echo "</p>";
+        echo "</div>";
+      });
 
       // Update post's custom field with attachment
       foreach ( $slugs as $custom_field ) {
