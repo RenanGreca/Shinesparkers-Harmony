@@ -1,0 +1,149 @@
+footer {
+  /*margin-top: 50px;*/
+  /*margin-bottom: 50px;*/
+  margin: 50px auto;
+  height: 100px;
+  font-family: var(--font-title), sans-serif;
+}
+
+.footer-line {
+  height: 2px;
+  width: 100%;
+  background-color: var(--neon-red);
+}
+
+.links {
+  float: left;
+  padding-top: 20px;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  /*font-weight: bold;*/
+}
+
+.links a {
+  display: inline-block;
+}
+
+.links > a:link {
+  padding-bottom: 5px;
+  margin-right: 15px;
+  color: var(--white);
+  border-bottom: 1px var(--neon-red) solid;
+}
+
+.links > a:active {
+  border-bottom: 1px var(--neon-red) solid;
+}
+
+.links > a:visited {
+  border-bottom: 1px var(--neon-red) solid;
+}
+
+.links > a:hover {
+  color: var(--white);
+  border-bottom: 1px var(--neon-blue) solid;
+}
+
+.year {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.copyright {
+  /*background-color: #4e5256;*/
+  /*width: 100%;*/
+  float:right;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+  padding-top: 20px;
+  /*margin-right: 20px;*/
+
+  /*position: absolute;*/
+  /*left: 0;*/
+  /*color: var(--white);*/
+  /*padding: 20px;*/
+}
+
+.ad-footer {
+  display: none;
+  /*margin: 10px auto;*/
+  margin: 20px auto;
+  /*float: right;*/
+  /*text-align: center;*/
+  height: 90px;
+  width: 768px;
+  background-color: var(--white);
+  z-index: 0;
+}
+
+@media (max-width: 1023px) {
+  footer {
+    margin: 50px 40px 50px 40px;
+    color: var(--light-text);
+    height: 300px;
+  }
+
+
+  .links {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  .links a {
+    display: block;
+    font-size: 20px;
+    line-height: 25px;
+    margin-right: 0;
+  }
+
+  .links > a:link {
+    border-bottom: none;
+  }
+
+  .links > a:active {
+    border-bottom: none;
+  }
+
+  .links > a:visited {
+    border-bottom: none;
+  }
+
+  .links > a:hover {
+    border-bottom: none;
+  }
+
+  .copyright {
+    text-align: center;
+    float: none;
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .year {
+    font-size: 22px;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .ad-footer {
+    display: none;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  footer {
+    width: var(--container-width-1000);
+  }
+}
+
+@media (min-width: 1200px) {
+  footer {
+    width: var(--container-width-1200);
+  }
+}
