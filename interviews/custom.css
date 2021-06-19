@@ -1,0 +1,29 @@
+.page-id-12273 table,
+.page-id-12247 table,
+.page-id-12265 table,
+.page-id-12169 table,
+.page-id-12289 table {
+    max-width: 708px;
+    margin: 0 auto;
+}
+
+.page-id-12273 table, tr, td,
+.page-id-12247 table, tr, td,
+.page-id-12265 table, tr, td,
+.page-id-12169 table, tr, td,
+.page-id-12289 table, tr, td {
+    border: 0 solid #000000;
+    text-align: left;
+    background-color: #000000;
+    background-repeat: no-repeat;
+}
+
+.page-id-12265 #retrobio {
+    background-position: right;
+}
+
+@media (max-width: 700px) {
+    .page-id-12265 #retrobio {
+        background: none;
+    }    
+}

@@ -3,13 +3,62 @@
 // Add theme support for Featured Images
 add_theme_support('post-thumbnails');
 add_theme_support('featured-content');
+add_theme_support(
+    'post-formats',
+    array(
+        'link',
+        'aside',
+        'gallery',
+        'image',
+        'quote',
+        'status',
+        'video',
+        'audio',
+        'chat',
+    )
+);
+
+add_theme_support(
+    'html5',
+    array(
+        'comment-form',
+        'comment-list',
+        'gallery',
+        'caption',
+        'style',
+        'script',
+        'navigation-widgets',
+    )
+);
+
+add_action( 'pre_get_posts', 'my_change_sort_order'); 
+    function my_change_sort_order($query){
+        if(is_archive()):
+         //If you wanted it for the archive of a custom post type use: is_post_type_archive( $post_type )
+           //Set the order ASC or DESC
+           $query->set( 'order', 'ASC' );
+           //Set the orderby
+           $query->set( 'orderby', 'title' );
+        endif;    
+    };
+
+function get_staff_links($musicians) {
+    global $wpdb;
+  $list = [];
+  foreach ($musicians as $musician) {
+    $musician = filter_var(trim($musician), FILTER_SANITIZE_MAGIC_QUOTES);
+    $results = $wpdb->get_results( "SELECT * FROM $wpdb->posts WHERE `post_type`='staff' AND `post_title` LIKE '$musician'" );
+    $list[] = '<a href="'.get_permalink($results[0]->ID).'">'.$results[0]->post_title.'</a>';
+  }
+  return $list;
+}
 
 function read_csv($custom_post_type) {
 
   $data = array();
   $errors = array();
   
-  $file = site_url() . '/wp-content/uploads/2021/05/' . $custom_post_type . '.csv';
+  $file = site_url() . '/wp-content/uploads/2021/06/' . $custom_post_type . '.csv';
 
   // Check if file is writable, then open it in 'read only' mode
   if ( $_file = fopen( $file, "r" ) ) {
@@ -75,23 +124,23 @@ function insert_posts( $custom_post_type, $slugs ) {
       if ( is_post_duplicate( $post["title"], $custom_post_type ) ) {
           continue;
       }
+
+      if ( count($post["title"]) == 0 ) {
+          continue;
+      }
       
       // Insert the post into the database
-      $post["id"] = wp_insert_post( array(
-          "post_title" => $post["title"],
-          "post_content" => $post["description"],
-          "post_type" => $custom_post_type,
-        //   "post_excerpt" => $post["excerpt"],
-          "post_status" => "publish"
-      ));
+      $post_data = array(
+        "post_title" => $post["title"],
+        "post_content" => $post["description"],
+        "post_type" => $custom_post_type,
+        "post_status" => "publish"
+      );
+      if ($custom_post_type == "album") {
+        $post_data["post_excerpt"] = $post["excerpt"];
+      }
 
-      add_action( "admin_notices", function() use ($post) {
-        echo "<div class='updated'>";
-        echo "<p>";
-        echo $post["id"];
-        echo "</p>";
-        echo "</div>";
-      });
+      $post["id"] = wp_insert_post( $post_data );
 
       // Update post's custom field with attachment
       foreach ( $slugs as $custom_field ) {
@@ -142,8 +191,8 @@ function insert_posts_from_csv() {
       // Change these to whatever you set
       $slugs = array(
           "year",
-          "zip_url",
-          "torrent_url",
+        //   "zip_url",
+        //   "torrent_url",
           "director",
           "assistant_director",
           "bg_color",
@@ -170,9 +219,9 @@ function insert_posts_from_csv() {
       // Change these to whatever you set
       $slugs = array(
           "name",
-          "country",
+        //   "country",
           "bio",
-          "photo_url",
+        //   "photo_url",
           "portfolio_title1",
           "portfolio_url1",
           "portfolio_title2",

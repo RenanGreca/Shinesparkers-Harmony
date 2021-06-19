@@ -1,0 +1,9 @@
+a.bigplay {
+  color: var(--neon-red) !important;
+  border-color: var(--neon-red) !important;
+}
+
+a.bigplay:hover {
+  color: var(--neon-blue) !important;
+  border-color: var(--neon-blue) !important;
+}

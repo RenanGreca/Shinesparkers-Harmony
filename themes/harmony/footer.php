@@ -2,10 +2,20 @@
     <!-- </div> <!-- /container -->
 
       <footer>
+
+        <div class="links">
+          <ul class="nav">
+            <li>
+              <a href="https://facebook.com/shinesparkers" class="social-icon social-fb" target="_blank"></a>
+              <a href="https://twitter.com/Shinesparkers" class="social-icon social-tw" target="_blank"></a>
+              <a href="https://instagram.com/shinesparkers" class="social-icon social-ig" target="_blank"></a>
+            </li>
+          </ul>
+        </div>
         <div class="copyright">
           <div class="year">
             © <?php echo date('Y'); ?>
-            <a href="https://shinesparkers.net/">
+            <a target="_blank" href="https://shinesparkers.net/">
               Shinesparkers
             </a>
           </div>

@@ -1,0 +1,514 @@
+album,group,group_no,track_no,title,source,original_game,musician,feat,description,mp3_url,runtime,excerpt
+Harmony of a Hunter,Disc 1,1,1,In the Beginning...,Title Screen,Metroid,Mercurial,,,,4:16,
+Harmony of a Hunter,Disc 1,1,2,Danger in Old Tourian,"Zebes Planetfall (Exterior), Crateria - The Space Pirates Emerge",Super Metroid,DoctorM64,,,,4:01,
+Harmony of a Hunter,Disc 1,1,3,Earthroot,Brinstar Red,Super Metroid,VikingGuitar,,,,3:47,
+Harmony of a Hunter,Disc 1,1,4,Bioluminescence,Sector 4 (AQA) Underwater,Metroid Fusion,Theophany,,,,4:38,
+Harmony of a Hunter,Disc 1,1,5,Infectious Fear,Sector 1 (SRX),Metroid Fusion,The Fishhead,,,,5:32,
+Harmony of a Hunter,Disc 1,1,6,Desperation,Escape,Metroid,Mozzaratti,,,,3:37,
+Harmony of a Hunter,Disc 1,1,7,Into the Green World,Green Brinstar,Super Metroid,Sam Dillard,,,,5:40,
+Harmony of a Hunter,Disc 1,1,8,Leader's Lair,Ridley's Hideout,Metroid,Prophetik,,,,3:38,
+Harmony of a Hunter,Disc 1,1,9,The Caves of Brinstar,Brinstar,Metroid,Tim Hellmann,,,,3:48,
+Harmony of a Hunter,Disc 1,1,10,Ashes to Ashes,Lower Norfair,Super Metroid,zircon,,,,3:27,
+Harmony of a Hunter,Disc 1,1,11,Kraid's Campfire Ballad,Kraid's Lair,Metroid,Sebastian Mårtensson,Kristin Björkebäck,,,3:32,
+Harmony of a Hunter,Disc 1,1,12,Cave Dweller,Vs Ridley,Super Metroid,Prophetik,,,,3:34,
+Harmony of a Hunter,Disc 1,1,13,The Mission's Briefing,Final Mission,Metroid Fusion,Tim Hellmann,,,,2:53,
+Harmony of a Hunter,Disc 1,1,14,Metroid Legacy,Prologue,Super Metroid,Omni-Psyence,,,,2:46,
+Harmony of a Hunter,Disc 1,1,15,M2Q,Vs Metroid Queen,Metroid II: Return of Samus,"Stemage, Chunkstyle",,,,4:37,
+Harmony of a Hunter,Disc 1,1,16,Mission Complete Ending Suite,Credits medley,Metroid series,Sam Dillard,,"Tracks: Ending (Metroid, Metroid II: Return of Samus, Super Metroid, Metroid Fusion)",,8:12,
+Harmony of a Hunter,Disc 1,1,17,Metroid Medley,Medley,Metroid series,Derris-Kharlan,,"Samus Appearance Fanfare (Metroid), Brinstar (Metroid), Prologue (Super Metroid), Vs Deorem/Mua (Metroid: Zero Mission), Brinstar Green (Super Metroid), Kraid's Lair (Metroid), Escape (Metroid), Vs Ridley (Super Metroid), Surface Runner (Metroid II: Return of Samus), Title Theme (Metroid)",,10:17,
+Harmony of a Hunter,Disc 2,2,1,Parasite X,Parasite Queen,Metroid Prime,Mazedude,,,,3:34,
+Harmony of a Hunter,Disc 2,2,2,Echoes in Eternity,Title Theme,Metroid Prime 2: Echoes,The Fishhead,,,,4:43,
+Harmony of a Hunter,Disc 2,2,3,Frozen Utopia,Phendrana Drifts,Metroid Prime,Mesmonium,,,,3:41,
+Harmony of a Hunter,Disc 2,2,4,Lore Hunter,Bryyo,Metroid Prime 3: Corruption,Darkesword,,,,3:50,
+Harmony of a Hunter,Disc 2,2,5,Hostile Shadows,Various,Various,Mozzaratti,,"Metroid Prime 2: Echoes Theme, Space Pirates, Amorbis, Swamp Boss Stage 1, Quadraxis, Emperor Ing Chrysalis, and Emperor Ing Spider",,6:53,
+Harmony of a Hunter,Disc 2,2,6,Melting Sun,Vs Rundas,Metroid Prime 3: Corruption,Pyro Paper Planes,,,,5:13,
+Harmony of a Hunter,Disc 2,2,7,Solitude,Tallon Overworld 2,Metroid Prime,zircon,C-GPO,,,3:21,
+Harmony of a Hunter,Disc 2,2,8,Corrupt Beginnings,Title Theme,Metroid Prime 3: Corruption,George R. Powell,,,,2:23,
+Harmony of a Hunter,Disc 2,2,9,Path of Ruin,Chozo Ruins,Metroid Prime,Darkesword,,,,5:18,
+Harmony of a Hunter,Disc 2,2,10,Entering a New World,Planet Tallon IV,Metroid Prime,Tim Hellmann,,,,3:51,
+Harmony of a Hunter,Disc 2,2,11,The Adventure Continues,Record of Samus,Metroid Prime,The Fishhead,,"Metroid Prime, Metroid Prime 2: Echoes, Metroid Prime 3: Corruption, Samus Returns (Others?)",,4:29,
+Harmony of a Hunter,Disc 2,2,12,Thunder Shooter,Vs Kanden,Metroid Prime Hunters,Chernabogue,VikingGuitar,,,3:55,
+Harmony of a Hunter,Disc 2,2,13,Symbol of the Ancients,Artifact Temple,Metroid Prime,Tim Hellmann,,,,4:19,
+Harmony of a Hunter,Disc 2,2,14,Lone Star,Credits,Metroid Prime,Pyro Paper Planes,,,,5:55,
+Harmony of a Hunter,Disc 2,2,15,Omega Cannon,Credits,Metroid Prime Hunters,VikingGuitar,,,,4:14,
+Harmony of a Hunter,Disc 2,2,16,In the End...,Finding the memento,Metroid: Other M,Mercurial,,,,2:29,
+Harmony of a Hunter,Disc 2,2,17,The Crimson Depths,Kraid's Lair,Metroid,Sam Dillard,,,,4:34,
+Harmony of a Hunter,Disc 2,2,18,Phazon Corruption,Medley,Metroid series,Video Game Music Choir,,"Crateria Surface, Theme of Samus, Theme of Samus Aran, Space Warrior, and Metroid Prime Credits",,3:41,
+Harmony of a Hunter,Disc 2,2,19,What's Past is Prologue,Metroid Other M TV commercial,,Theophany,,,,2:27,
+Harmony of a Hunter: 101% Run,Disc 1,1,1,Primoris,Credits,Metroid Prime,"Stephan Wells, Erik Scerri",,,,3:37,
+Harmony of a Hunter: 101% Run,Disc 1,1,2,Altar of Aether,Luminoth Temple,Metroid Prime 2: Echoes,"Laura Intravia, Jared Cowing, Choir",,,,6:01,
+Harmony of a Hunter: 101% Run,Disc 1,1,3,Depths of Phendrana,Phendrana Drifts Depths,Metroid Prime,Buoy,Stephan Wells,,,4:26,
+Harmony of a Hunter: 101% Run,Disc 1,1,4,Eldrich Spore Spawn,Spore Spawn,Super Metroid,Gario,,,,3:27,
+Harmony of a Hunter: 101% Run,Disc 1,1,5,Entropic Dream,Skytown,Metroid Prime 3: Corruption,Pyro Paper Planes,Laura Intravia,,,4:13,
+Harmony of a Hunter: 101% Run,Disc 1,1,6,Beyond the Glass,"Upper Maridia, Lower Maridia",Super Metroid,Sam Dillard,,,,5:49,
+Harmony of a Hunter: 101% Run,Disc 1,1,7,Unauthorised Access,Vs Security Robot B.O.X.,Metroid Fusion,Erik McClure,,,,3:33,
+Harmony of a Hunter: 101% Run,Disc 1,1,8,Alluring Darkness,Secrets of the Chozo,Metroid II: Return of Samus,Stephan Wells,Buoy,,,3:23,
+Harmony of a Hunter: 101% Run,Disc 1,1,9,Sanctuary Sentinel,Vs Quadraxis,Metroid Prime 2: Echoes,Samuel Lidström,,,,4:23,
+Harmony of a Hunter: 101% Run,Disc 1,1,10,The Unnamed Frontier,Surface Runner,Metroid II: Return of Samus,Pyro Paper Planes,VikingGuitar,,,4:57,
+Harmony of a Hunter: 101% Run,Disc 1,1,11,Unfinished Business,Final Mission Resolve,Metroid: Other M,Luis A. Flores,,Partial remix of The Burning Lava Fish and Nemesis Ridley,,3:34,
+Harmony of a Hunter: 101% Run,Disc 1,1,12,Gravity,Vs Nightmare,Metroid Fusion,Theophany,,,,5:53,
+Harmony of a Hunter: 101% Run,Disc 1,1,13,Entering the Hive,Vs Hive Totem,Metroid Prime,Jared Cowing,Laura Intravia,,,2:57,
+Harmony of a Hunter: 101% Run,Disc 1,1,14,Dreams of Steel,Alinos Gateway,Metroid Prime Hunters,Jack of Bass,Maciej Markiewicz,,,4:47,
+Harmony of a Hunter: 101% Run,Disc 1,1,15,The Lady Returns,Title Theme,Metroid II: Return of Samus,Emperor Charlemagne,,,,3:18,
+Harmony of a Hunter: 101% Run,Disc 1,1,16,Aquatic Lullaby,Crashed Frigate,Metroid Prime,Sebastian Mårtensson,,,,4:11,
+Harmony of a Hunter: 101% Run,Disc 1,1,17,Lacrodectus,Vs Metroid Prime,Metroid Prime,Dare to Oppress,,,,3:48,
+Harmony of a Hunter: 101% Run,Disc 2,2,1,Doppelgänger,Vs Dark Samus,Metroid Prime 2: Echoes,Vomitron,,,,4:02,
+Harmony of a Hunter: 101% Run,Disc 2,2,2,The Calm Before the Fire,Upper Norfair,Super Metroid,Sean Haeberman,,,,3:47,
+Harmony of a Hunter: 101% Run,Disc 2,2,3,Slipstream,Vs Serris,Metroid Fusion,Pyro Paper Planes,,,,5:22,
+Harmony of a Hunter: 101% Run,Disc 2,2,4,Remembering Who I Am,Theme of Samus Aran: Galactic Warrior,Super Metroid,Mercurial,,,,3:01,
+Harmony of a Hunter: 101% Run,Disc 2,2,5,Guardians of Old,The Luminoth,Metroid Prime 2: Echoes,Stephan Wells,Buoy,,,3:51,
+Harmony of a Hunter: 101% Run,Disc 2,2,6,Omega Fallen,Sector 3 Restore the Cooling Installation Timer Mission,Metroid Fusion,Nick Perrin,,,,6:04,
+Harmony of a Hunter: 101% Run,Disc 2,2,7,Automation,Sanctuary Fortress,Metroid Prime 2: Echoes,Mesmonium,,,,4:48,
+Harmony of a Hunter: 101% Run,Disc 2,2,8,In the Bowels of Norfair,Norfair,Metroid: Zero Mission,George R. Powell,,,,3:39,
+Harmony of a Hunter: 101% Run,Disc 2,2,9,Where to from Here,Main Theme,Metroid Prime Trilogy,Cursed Lemon,Stephan Wells,,,4:57,
+Harmony of a Hunter: 101% Run,Disc 2,2,10,A Familiar Path,The Elders,Metroid Prime Hunters,Sean Haeberman,,,,4:03,
+Harmony of a Hunter: 101% Run,Disc 2,2,11,Incoming Kraid,Vs Kraid,Super Metroid,Mozzaratti,,,,4:28,
+Harmony of a Hunter: 101% Run,Disc 2,2,12,Torvus Chips,Torvus Bog,Metroid Prime 2: Echoes,Mazedude,,,,3:16,
+Harmony of a Hunter: 101% Run,Disc 2,2,13,The Depths of Tallon IV,Phazon Mines,Metroid Prime,Slimane Dellaoui,,,,1:13,
+Harmony of a Hunter: 101% Run,Disc 2,2,14,"Old Friend, New Foe",Vs Gandrayda,Metroid Prime 3: Corruption,Sebastian Mårtensson,Pontus Lundén,,,3:49,
+Harmony of a Hunter: 101% Run,Disc 2,2,15,Te Inveniam,Vs Mother Brain,Super Metroid,Chris Apple,,"Lyrics:
+
+Audi te,
+mea filia.
+
+Ad tenebras,
+ad profundo lacu.
+Ad tenebras,
+ad profundo lacu.
+
+Te inveniam.
+Te abducam.
+Estis meam.
+
+Veneo.
+
+Interficiam.
+Consumam quis hostem.
+Permebo ignem.
+Te inveniam.
+
+==========
+
+Translation:
+
+I hear you,
+my daughter.
+
+Into darkness,
+into the infernal lake.
+Into darkness,
+into the infernal lake.
+
+I will find you.
+I will take you.
+You are mine.
+
+I come.
+
+I will cross into the underworld.
+I will consume any enemy.
+I will pass through fire.
+I will find you.",,10:07,
+Harmony of a Hunter: 101% Run,Disc 3,3,1,Samus Voyage,Medley,Metroid series,HiScore,,"Tracks: Title (Metroid), Brinstar (Metroid), Surface, Mother Brain, Samus Aran's Appearance Fanfare, VS. Nightmare, Tallon Overworld, Item Acquisition Fanfare, Brinstar Depths, Torvus Bog, Metroid Prime Credits, Menu, Rundas Fight, and Nemesis Ridley",,12:56,
+Harmony of a Hunter: 101% Run,Disc 3,3,2,Metroid Medley 2,Medley,Metroid series,Derris-Kharlan,,"Tracks: Metroid Prime Credits, Metroid Prime Theme, Tallon Overworld, Darkness, Phendrana Drifts, Chozo Shrine, SkyTown, Bryyo, and Record of Samus)",,13:20,
+Harmony of a Hunter: 101% Run,Disc 3,3,3,Seeking Light,Medley,Metroid series,Martin Leung,,"Tracks: Title (Metroid), Brinstar (Metroid), Brinstar Depths, Lower Brinstar, and Magmoor Caverns)",,8:57,
+Harmony of a Hunter: 101% Run,Disc 3,3,4,Harmony of a Hunter 101% Run Teaser Music,Medley,Metroid series,Mozzaratti,,Tracks: Title (Metroid) and Theme of Samus,,0:44,
+Harmony of a Hunter: 101% Run,Disc 3,3,5,Item Acquisition Fanfare,Item Acquisition Fanfare,Super Metroid,Stephan Wells,,,,0:17,
+Harmony of a Hunter: 101% Run,Disc 3,3,6,Item Room/Item Acquisition Fanfare,Item Room,Super Metroid,Zack Parrish,,,,1:30,
+Harmony of a Hunter: 101% Run,Disc 3,3,7,Only Human,Original Arrangement,,Sebastian Mårtensson,,"Lyrics:
+
+In the vastest part of space
+Where silence grows, I move in grace
+but I am deadly as they come
+Yes, I'm the one who justice call
+When all hope seems to fall apart
+So here we go again
+I'm crossing Zebes' stratosphere
+The acid rain comes pouring down
+and dark's the way that guides my feet
+Just choose your side, you're friend or foe
+Answer fast or you'll be gone
+
+I'm dangerous
+And watching over you
+I'm fire
+but in the end I'm only human
+Mysterious
+Might be the sweetest dream
+or nightmare
+but in the end I'm only human
+
+The sun is going down again,
+or not, down here it's hard to tell
+I'm seven miles below the surface, alone against this world
+Haven't slept for days, I'll get my sleep
+when I've put your life to rest
+
+I'm dangerous
+And watching over you
+I'm fire
+but in the end I'm only human
+Mysterious
+Might be the sweetest dream
+or nightmare
+but in the end I'm only human
+
+I'm dangerous
+And watching over you
+I'm fire
+but in the end I'm only human
+Mysterious
+Might be the sweetest dream
+or nightmare
+but in the end I'm only human",,4:33,
+Harmony of Heroes,Opening,1,1,Challenger Approaching,Opening medley,Super Smash Bros. series,Rozen,"Laura Intravia, Brenda Puepke, Omar Najmi, Angel Mannion","Tracks: Super Smash Bros. 64, Melee, Brawl & 3DS/Wii U Main Themes",,4:27,
+Harmony of Heroes,Super Mario,2,2,Sunset at Mushroom Castle,Ground Theme,Super Mario Bros.,Bernardo Limon,,,,3:18,
+Harmony of Heroes,Super Mario,2,3,Stroll through the Mushroom World,Ground Theme,Super Mario Bros. 3,Maddie Lim,,,,4:02,
+Harmony of Heroes,Super Mario,2,4,Sad Underground,Underground Theme,Super Mario Bros.,Forgotten Dawn,,,,2:56,
+Harmony of Heroes,Super Mario,2,5,A Twisted Carousel,Underground Theme,Super Mario Land,Steampianist,,,,6:03,
+Harmony of Heroes,Super Mario,2,6,Shining Path,Slide,Super Mario 64,Prophetik,,Stage: Rainbow Cruise (Melee),,4:44,
+Harmony of Heroes,Super Mario,2,7,Cleanse the Sun,Delfino Plaza,Super Mario Sunshine,Dare to Oppress,,,,5:02,
+Harmony of Heroes,Super Mario,2,8,Who Will Win the Race?,Mario Circuit,Super Mario Kart,Maddie Lim,,,,4:33,
+Harmony of Heroes,Super Mario,2,9,Baffle Ball,Waluigi Pinball,Mario Kart DS,The Fishhead,,,,4:07,
+Harmony of Heroes,Super Mario,2,10,A Vivid Cruise to the Finish,Rainbow Road medley,Mario Kart Series,Maddie Lim,,"Tracks: Rainbow Road (Super Mario Kart), Rainbow Road (Mario Kart 64), Rainbow Road (Mario Kart: Double Dash!!), Rainbow Road (Mario Kart Wii), Rainbow Road (Mario Kart 8)",,4:41,
+Harmony of Heroes,Super Mario,2,11,Bros. before Ghosts,Main Theme,Luigi’s Mansion,Konrad Petersson,,,,4:11,
+Harmony of Heroes,Donkey Kong,3,12,Jungle Swing,Jungle Level,Donkey Kong Country,Stephan Wells,Eleanor Hébert,,,5:14,
+Harmony of Heroes,Donkey Kong,3,13,Rhythm of the Kong,The Map Page / Bonus Level,Donkey Kong Country,Sean Haeberman,,,,2:30,
+Harmony of Heroes,Donkey Kong,3,14,A K.Rool Pub Crawl,King K.Rool / Ship Deck 2,Donkey Kong Country,Sebastian Mårtensson,Christopher Woo,,,3:31,
+Harmony of Heroes,Donkey Kong,3,15,Rush of the Rainforest,Stickerbush Symphony,Donkey Kong Country,Buoy,,,,7:11,
+Harmony of Heroes,Donkey Kong,3,16,Kong Kollektive,DK Rap,Donkey Kong 64,Sebastian Mårtensson,Harmony of Heroes,"Rappers: Sebastian Mårtensson, Thunderclash, Bernardo Limon, Pyro Paper Planes, Darren Kerwin, Forgotten Dawn, Laura Intravia, Moa Lenngren, Jennifer Petersson, Samuel Lidström, Ryan Stunkel, Christopher Hunter, Konrad Petersson, MetalRenard, Mr. Kapow, Garlagan, Pontus Lundén, Breed, Eleanor Hébert, Reven, Grant Kirkhope
+
+Cameos: Rocket Barrel Ride, Gangplank Galleon (DKC), Stickerbrush Symphony (DKC2), Cascade Capers (DKC3), Scorch 'n' Torch (DKC:TF), Jib Jig (DKC2)",,3:28,
+Harmony of Heroes,The Legend of Zelda,4,17,High Roller's Castle,Overworld Theme,The Legend of Zelda,Georg-Christoph Schlee,,,,3:37,
+Harmony of Heroes,The Legend of Zelda,4,18,El Pájaro es la Palabra,Dragon Roost Island,The Legend of Zelda: The Wind Waker,Laura Intravia,Davey Patterson,,,4:52,
+Harmony of Heroes,The Legend of Zelda,4,19,Behind Pillars of Marble,Temple Theme,The Legend of Zelda: The Adventure of Link,Christopher Hunter,,,,6:16,
+Harmony of Heroes,The Legend of Zelda,4,20,Wind in the Sail,The Great Sea,The Legend of Zelda: The Wind Waker,Soleviio,,,,3:20,
+Harmony of Heroes,The Legend of Zelda,4,21,Mirror of Twilight,Main Theme,The Legend of Zelda: Twilight Princess,Sean Haeberman,,,,4:55,
+Harmony of Heroes,The Legend of Zelda,4,22,Cucco Revenge Squad,Hidden Mountain & Forest,The Legend of Zelda: A Link to the Past,Jonathan Peros,,,,4:52,
+Harmony of Heroes,The Legend of Zelda,4,23,Saria's Fairy-Go-Round,Saria’s Song,The Legend of Zelda: Ocarina of Time,ZipZipper,,,,4:04,
+Harmony of Heroes,The Legend of Zelda,4,24,Beyond the Chasm,Gerudo Valley,The Legend of Zelda: Ocarina of Time,Erik Scerri,,,,6:56,
+Harmony of Heroes,The Legend of Zelda,4,25,Tal Tal Ranger,Tal Tal Heights,The Legend of Zelda: Link's Awakening,Mesmonium,,,,2:45,
+Harmony of Heroes,The Legend of Zelda,4,26,Tune of Tempests,Song of Storms,The Legend of Zelda: Ocarina of Time,Stephan Wells,Christopher Woo,,,4:33,
+Harmony of Heroes,The Legend of Zelda,4,27,Mechanical Steed,The Hidden Village,The Legend of Zelda: Twilight Princess,Steampianist,,,,4:59,
+Harmony of Heroes,The Legend of Zelda,4,28,Dark Horizons,The Dark World / Hyrule Castle,The Legend of Zelda: A Link to the Past,Sam Dillard,,,,5:00,
+Harmony of Heroes,Metroid,5,29,There's No Metal on Zebes,Brinstar,Metroid,PirateCrab,,,,3:39,
+Harmony of Heroes,Metroid,5,30,The Bounty Hunter,"Theme of Samus Aran, Space Warrior",Super Metroid,"rEc, Sebastian Mårtensson",,,,4:23,
+Harmony of Heroes,Metroid,5,31,Edge of the Labyrinth,Norfair,Metroid,Sam Dillard,,,,5:00,
+Harmony of Heroes,Metroid,5,32,Echoes From the Showdown,Multiplayer,Metroid Prime 2: Echoes,"Sebastian Mårtensson, Moa Lenngren",,,,5:17,
+Harmony of Heroes,Metroid,5,33,Dark Intelligence,Vs. Meta Ridley,Metroid Prime,Rozen,Reven,,,5:55,
+Harmony of Heroes,Metroid,5,34,Chekhov's Beam,Ending,Metroid,Vidboy,,,,3:48,
+Harmony of Heroes,Metroid,5,35,From the Depths,Brinstar Depths,Metroid,Theophany,Laura Intravia,,,9:26,
+Harmony of Heroes,Kirby,6,36,Dream Band,Gourmet Race,Kirby Super Star,Samuel Lidström,,,,2:33,
+Harmony of Heroes,Kirby,6,37,Adventures in the Greenest Greens,Green Greens,Kirby's Dream Land,Mozzaratti,,,,4:21,
+Harmony of Heroes,Kirby,6,38,The Last Cake,Butter Building,Kirby's Adventure,"Sebastian Mårtensson, Joel Sandberg",,,,2:39,
+Harmony of Heroes,Kirby,6,39,The Fall of Halberd,Meta Knight's Revenge,Kirby Super Star,Eleanor Hébert,,,,3:02,
+Harmony of Heroes,Kirby,6,40,King DedeDnB,King Dedede's Theme,Kirby's Dream Land,Aero,,,,4:26,
+Harmony of Heroes,Kirby,6,41,Eye of Sorrow,0² Battle,Kirby 64: The Crystal Shards,InYourDreams,"Stephan Wells, Rozen",,,5:34,
+Harmony of Heroes,Star Fox,7,42,Defending Corneria,Medley,Star Fox,Sean Haeberman,,"Tracks: Venom, Main Theme, Sector X/Z",,3:49,
+Harmony of Heroes,Star Fox,7,43,Watch Your Step Fox!,Star Wolf,Star Fox 64,garlagan,,,,4:06,
+Harmony of Heroes,Star Fox,7,44,Star Fix: The Expedition into the Dark Beauties of Space,Main Theme,Star Fox 64,Mr. Kapow,,,,3:15,
+Harmony of Heroes,Star Fox,7,45,Space Defender,Space Armada,Star Fox,Akmigone,,,,4:23,
+Harmony of Heroes,Star Fox,7,46,Space Canines on a Plane,Corneria,Star Fox,Pontus Lundén,,,,3:36,
+Harmony of Heroes,Pokémon,8,47,Mega Helix,Battle Music medley,Pokémon Red & Green Versions,Tom Mauritzon,,,,3:44,
+Harmony of Heroes,Pokémon,8,48,Dawn of the Journey,Road to Viridian City,Pokémon Red & Green Versions,GuardianSoul,,,,4:07,
+Harmony of Heroes,Pokémon,8,49,Johto BattleMix,Battle Music medley,Pokémon Gold & Silver Versions,Soleviio,,,,3:33,
+Harmony of Heroes,Pokémon,8,50,Pondering the Battle Within,Battle! (Wild Pokémon),Pokémon Ruby & Sapphire Versions,Rozen,,,,7:34,
+Harmony of Heroes,Pokémon,8,51,Mystery Jam at Spear Pillar,Battle! (Dialga/Palkia) / Spear Pillar,Pokémon Diamond & Pearl Versions,ZipZipper,,,,4:13,
+Harmony of Heroes,Pokémon,8,52,Pirate's Road,Victory Road,Pokémon Ruby & Sapphire Versions,PirateCrab,,,,3:55,
+Harmony of Heroes,Pokémon,8,53,Sabrina's Lament,Main Theme,Pokémon Red & Green Versions,Mercurial,,,,4:48,
+Harmony of Heroes,F-Zero,9,54,Maximum Overdrive,Mute City,F-Zero,Thunderclash,,,,4:11,
+Harmony of Heroes,F-Zero,9,55,Fields of Fire,Fire Field,F-Zero,"Spencer Bambrick, Louie Aronowitz",,,,2:16,
+Harmony of Heroes,F-Zero,9,56,Breaking Point,Planet Colors,F-Zero GX,Lashmush,,,,3:32,
+Harmony of Heroes,F-Zero,9,57,Death Race,Big Blue,F-Zero,Vomitron,,,,3:00,
+Harmony of Heroes,Fire Emblem,10,58,Anthem of Fire,Fire Emblem Theme,Fire Emblem: Shadow Dragon and the Blade of Light,"Audire Soundtrack Choir & Orchestra, The Video Game Music Choir",,,,3:34,
+Harmony of Heroes,Fire Emblem,10,59,"Together, We Ride (to Victory)",Story 5 Meeting,Fire Emblem: Shadow Dragon and the Blade of Light,Brian Czernikowski,,,,3:00,
+Harmony of Heroes,Fire Emblem,10,60,Path of the Prestigous,Winning Road - Roy's Hope,Fire Emblem: The Binding Blade,Zack Parrish,Michaela Nachtigall,,,3:34,
+Harmony of Heroes,Yoshi,11,61,Super Athletic,Athletic Theme,Super Mario World,Super Guitar Bros.,,,,1:38,
+Harmony of Heroes,Yoshi,11,62,Baby Mario Medley,Obstacle Course,Yoshi's Island,Ryan Stunkel,,,,5:21,
+Harmony of Heroes,Yoshi,11,63,Sunny Side Up,Wildlands,Yoshi's Island DS,Zack Parrish,,,,3:46,
+Harmony of Heroes,Yoshi,11,64,Yoshi's Island Chill,Ending,Yoshi's Story,Spencer Bambrick,Louie Aronowitz,,,3:25,
+Harmony of Heroes,Kid Icarus,12,65,Gift of Flight,Overworld,Kid Icarus,Samuel Lidström,Annmari Thim,,,3:48,
+Harmony of Heroes,Kid Icarus,12,66,Flight of the Angels,Underworld,Kid Icarus,Nick Perrin,,,,5:52,
+Harmony of Heroes,Mother,13,67,Global Nessesity,Bein' Friends,EarthBound Beginnings,SMES,,"Tracks: Bein' Friends, Eight Melodies (Mother/Earthbound Beginnings), Mother Earth, Enemy Encounter",,8:15,
+Harmony of Heroes,Mother,13,68,Bound for Home,Fourside,EarthBound,ChronoNomad,,,,4:17,
+Harmony of Heroes,Mother,13,69,Duality,Unfounded Revenge / Smashing Song of Praise,Mother 3,Michael Breed,,,,3:42,
+Harmony of Heroes,Mother,13,70,"Pollyanna, I Believe in You",Pollyanna (I Believe in You),EarthBound Beginnings,"ErichWK, Monte",,,,2:36,
+Harmony of Heroes,Mother,13,71,M.O.T.H.E.R.F.U.o_O.E.R!,Medley,EarthBound Beginnings,Samuel Lidström,Darcy Maguire,"Tracks: Bein' Friends, Pollyanna",,4:31,
+Harmony of Heroes,Mother,13,72,Spring Will Melt Us Back to Home,Snowman,EarthBound Beginnings,Lifeformed,,,,3:00,
+Harmony of Heroes,Pikmin,14,73,Flower Blooms Pseudo-Euphoria,Forest of Hope,Pikmin,Steampianist,,,,5:20,
+Harmony of Heroes,Pikmin,14,74,Die no Uta,Ai no Uta,Pikmin,Zip Zipper,,,,3:34,
+Harmony of Heroes,Pikmin,14,75,Waiting for Sunrise,World Map,Pikmin 2,Reven,Laura Intravia,,,4:53,
+Harmony of Heroes,Metal Gear,15,76,This Is Snake,Encounter,Metal Gear Solid,"Stephan Wells, Erik Scerri","Pontus Lundén, Benjamin Gatt",,,7:00,
+Harmony of Heroes,Metal Gear,15,77,Nu Dead Cell,"Yell ""Dead Cell""",Metal Gear Solid 2: Sons of Liberty,Forgotten Dawn,,,,6:28,
+Harmony of Heroes,Metal Gear,15,78,Bound for Zanzibar,Theme of Solid Snake,Metal Gear 2: Solid Snake,Jared Cowing,Laura Intravia,,,3:30,
+Harmony of Heroes,Metal Gear,15,79,I'm No Hero,MGS4 ~Theme of Love~,Metal Gear Solid 4: Guns of the Patriots,Erik Scerri,Christopher Woo,,,5:24,
+Harmony of Heroes,Nintendo,16,80,Dr. Mario (Fever),Fever,Dr. Mario,Kirby's Dream Band,,,,2:10,
+Harmony of Heroes,Nintendo,16,81,Full of Hot Air,Balloon Trip,Balloon Fight,Super Marcato Bros.,,,,2:57,
+Harmony of Heroes,Nintendo,16,82,Bach Rider,Mach Rider,Mach Rider,Laura Intravia,,,,5:25,
+Harmony of Heroes,Nintendo,16,83,Toss It up Flat One,Flat Zone / Flat Zone 2,Super Smash Bros. series,garlagan,,,,4:10,
+Harmony of Heroes,Nintendo,16,84,Rider the Lightning,Go K.K. Rider!,Animal Crossing,MetalRenard,,,,2:36,
+Harmony of Heroes,Nintendo,16,85,Jazzicle Mountain,Ice Climber,Ice Climber,Reven,Laura Intravia,,,3:34,
+Harmony of Heroes,Nintendo,16,86,"Club Wario, Inc.","WarioWare, Inc.","WarioWare, Inc.: Mega Microgames!",Forgotten Dawn,,,,5:23,
+Harmony of Heroes,Nintendo,16,87,After Battle,Battle Scene / Final Boss,Golden Sun,Julia Seeholzer,,,,3:31,
+Harmony of Heroes,Nintendo,16,88,Blue Haired Devil,Shin Onigashima,Shin Onigashima,Brian Czernikowski,,,,3:57,
+Harmony of Heroes,Nintendo,16,89,Magical Girls' Live Stream,Ashley's Song,WarioWare: Touched!,"Steampianist, MiMA, ryokodesu97",,,,3:27,
+Harmony of Heroes,Nintendo,16,90,Pertussis Sinustis,Chill,Dr. Mario,The Fishhead,,,,6:11,
+Harmony of Heroes,Nintendo,16,91,Building Walls in the Cold,Tetris: Type A & B,Tetris,Pontus Lundén,,,,4:16,
+Harmony of Heroes,Super Smash Bros.,17,92,Smashin' Through!,How to Play,Super Smash Bros. Melee,GuardianSoul,,,,3:00,
+Harmony of Heroes,Super Smash Bros.,17,93,Smash Superstars,Trophies,Super Smash Bros. Melee,zircon,,,,3:20,
+Harmony of Heroes,Super Smash Bros.,17,94,En Garde,Online Practice Stage,Super Smash Bros. Brawl,Zack Parrish,,,,2:50,
+Harmony of Heroes,Super Smash Bros.,17,95,Last Stand,Boss Battle Song 2,Super Smash Bros. Brawl,Brian Czernikowski,,,,5:16,
+Harmony of Heroes,Super Smash Bros.,17,96,Live and Let Polygon,Fighting Polygon Team,Super Smash Bros.,Mesmonium,,,,3:47,
+Harmony of Heroes,Super Smash Bros.,17,97,Target Blitz,Targets!,Super Smash Bros. Melee,Buoy,,,,4:04,
+Harmony of Heroes,Super Smash Bros.,17,98,Senjõ,Battlefield,Super Smash Bros. Melee,Reven,Laura Intravia,,,3:49,
+Harmony of Heroes,Super Smash Bros.,17,99,Kumite,Multi-Man Melee,Super Smash Bros. Melee,Rozen,"Viking Guitar, Mat Ombler",,,4:02,
+Harmony of Heroes,Super Smash Bros.,17,100,Final Destination,Final Destination medley,Super Smash Bros. series,Rozen,,,,7:34,
+Harmony of Heroes,Super Smash Bros.,17,101,Harmony of Heroes,Medley,Various,Rozen,,"0:00 Super Smash Bros. Melee - Main Theme
+1:06 Kirby Super Star - Staff Roll
+1:58 Pokemon Red/Blue - Credits
+2:38 Donkey Kong Country - Credits 
+3:38 Fire Emblem: The Binding Blade - After the War
+4:26 Yoshi's Island - Credits
+5:32 Kid Icarus - Credits
+6:30 Mother/Earthbound Beginnings - Credits
+7:33 Pikmin - Credits
+7:57 Super Mario World - Credits
+8:42 Metroid Prime 3: Corruption - Staff Roll
+9:46 F-Zero - Mute City
+10:22 Star Fox 64 - Main Theme
+11:15 Star Fox 64 - Credits
+11:42 The Legend of Zelda: Ocarina of Time - The Legend of Hyrule
+12:02 The Legend of Zelda: A Link to the Past - Ending
+12:38 The Legend of Zelda: Ocarina of Time - Ending
+12:57 Super Smash Bros. Melee - Main Theme",,,
+Harmony of Heroes: Final Smash,,1,1,The Year 200X,Medley,Mega Man 2,Sebastian Mårtensson,,"Cameos: Stage Select, Bubble Man Stage, Air Man Stage, Dr. Wily’s Castle 2, Wood Man Stage, Boss Battle, Quick Man Stage, Flash Man Stage, Crash Man Stage, Metal Man Stage, Password Select, Heat Man Stage, Introduction, Ending. Brad McBride (Soundscape)",,11:01,
+Harmony of Heroes: Final Smash,,1,2,Titans,Main Theme / Gaur Plain,Xenoblade,Erik Scerri,"Michaela Nachtigall, Stephan Wells",Cameos: Main Theme (Xenoblade Chronicles),,5:01,
+Harmony of Heroes: Final Smash,,1,3,Your Face is History,Jogging / Countdown,Punch-Out!!,Thunderclash,Konrad Petersson,"Lyrics:
+
+Little Mac is a boxing man
+And he's been training a bunch
+Jumping ropes, smashing sand bags
+Improving his vicious star punch
+
+He might not be very tall
+He might not reach you at all
+But one punch, and you will fall!
+
+Doc Louis is a coaching man
+A famous hard hitter from '54
+He's retired now, training Little Mac
+Until a new champion is born
+
+He strengthens Mac's psyche and strike
+I don't think he stole that bike
+A chocolate bar's what he'd like
+
+Spotlights on and a round of applause
+For the left corner boxer in his green gloves and shorts
+Like a butterfly he'll float and like a bee he will sting
+He'll down his challengers so hard they won't hear the bell ring
+This time he'll wear the gloves to take out the trash
+Now he's playing with power in Super Smash
+
+PUNCH OUT!
+By his master hands you'll be
+KNOCKED OUT!
+Before you get a chance to see
+LIGHTS OUT!
+Your face is history
+PUNCH OUT!
+
+Little Mac is a little man
+But now he's going big with the champion fight
+With Doc by his side, will his dream come true?
+Will the title and belt be his tonight?
+
+He will now end your career
+You'll know the end is near
+When you're punched through the atmosphere
+
+FIGHT!
+We've got nothing better to do
+FIGHT!
+If you fight me then I'll fight you
+FIGHT!
+This champion title is not for two
+Fighting is all that I ever learnt to do
+
+Now Little Mac is the champion, man
+Still not so tall but very proud
+But in Super Smash, his length is something good
+Hitting under the belt is allowed
+
+He might not be very tall
+He might not reach you at all
+But one punch, and you will fall!
+
+Spotlights on and a round of applause
+For the left corner boxer in his green gloves and shorts
+Like a butterfly he'll float and like a bee he will sting
+He'll down his challengers so hard they won't hear the bell ring
+This time he'll wear the gloves to take out the trash
+Now he's playing with power in Super Smash
+
+PUNCH OUT!
+By his master hands you'll be
+KNOCKED OUT!
+Before you get a chance to see
+LIGHTS OUT!
+Your face is history
+PUNCH OUT!",,3:50,
+Harmony of Heroes: Final Smash,,1,4,It's a Skateboard Rave for All,Skateboard Arena,Wii Fit Plus,Basheman,Jennifer Petersson,Cameos: Super Hoop (Wii Fit),,3:26,
+Harmony of Heroes: Final Smash,,1,5,You're Too Slow,Green Hill Zone,Sonic the Hedgehog,meganeko,,Cameo: Star Light Zone (Sonic the Hedgehog),,3:51,
+Harmony of Heroes: Final Smash,,1,6,Through the Blades of Shadow,Shadow Man Stage,Mega Man 3,Moa Lenngren,,Cameos: Weapon Get (Mega Man 3),,3:48,
+Harmony of Heroes: Final Smash,,1,7,Battle of the Generations,Battle Theme medley,Pokémon series,Maddie Lim,Michaela Nachtigall,"Tracks: Trainer Battle (Pokémon: Red & Blue), Johto Trainer Battle (Pokémon: Gold & Silver), Trainer Battle (Pokémon: Ruby & Sapphire), Trainer Battle Victory (Pokémon: X & Y), Gym Leader Battle (Pokémon: Gold & Silver)",,6:05,
+Harmony of Heroes: Final Smash,,1,8,In a Dream,Snake Eater,Metal Gear Solid 3: Snake Eater,Stephan Wells,"Stina Nyman, Jennifer Petersson","Cameos: Calling to the Night (Metal Gear Solid: Portable Ops), Main Theme (Metal Gear Solid 4)
+
+Lyrics:
+
+What a thrill
+With darkness and silence through the night
+What a thrill
+I'm searching and I'll melt into you
+What a fear in my heart
+But you're so supreme!
+
+I give my life, not for honor, but for you (Snake Eater)
+In my time, there'll be no one else
+Crime, it's the way I fly to you (Snake Eater)
+I'm still in a dream, Snake Eater
+
+Someday you go through the rain
+And someday you feed on a tree frog
+This ordeal, the trial to survive
+For the day we see new light
+
+I give my life, not for honor, but for you (Snake Eater)
+In my time, there'll be no one else
+Crime, it's the way I fly to you (Snake Eater)
+I'm still in a dream, Snake Eater
+I'm still in a dream, Snake Eater
+(Snake Eater...)",,3:46,
+Harmony of Heroes: Final Smash,,1,9,The Name's Kong,Gear Getaway,Donkey Kong,Vincent Rubinetti,,,,3:28,
+Harmony of Heroes: Final Smash,,1,10,Me and the Kapp'n Make it Happ'n,Kapp'n's Song,Animal Crossing: New Leaf,Zack Parrish,,,,2:19,
+Harmony of Heroes: Final Smash,,1,11,On The Edge of Tomorrow,Live & Learn,Sonic Adventure 2,FantomenK,"Moa Lenngren, Tom Mauritzon",,,3:54,
+Harmony of Heroes: Final Smash,,1,12,To The Stars,Medley,Super Mario Galaxy,Stephan Wells,Laura Intravia,"Tracks: Starbit Festival, Gusty Garden Galaxy, Grand Star Collection, Into the Galaxy, Stardust Road ",,5:07,
+Harmony of Heroes: Final Smash,,1,13,Duck Hunt Groove,Duck Hunt medley,Duck Hunt,Basheman,,,,2:30,
+Harmony of Heroes: Final Smash,,1,14,Chaos Neighborhood,Afternoon on the Island,Tomodachi Life,Eleanor Hébert,Patrick Bureau (Drums),,,3:35,
+Harmony of Heroes: Final Smash,,1,15,ignite,Spark Man Theme,Mega Man 3,Sebastian Mårtensson,Helena Burström,Cameos: Cut Man Theme (Mega Man),,3:43,
+Harmony of Heroes: Final Smash,,1,16,Hammered Bros.,Hammer Bros.,Super Mario Bros.,Steampianist,,Cameos: Overworld 1 (Super Mario Bros. 3),,4:28,
+Harmony of Heroes: Final Smash,,1,17,If You Believe,Magicant,EarthBound Beginnings,Zack Parrish,"Jeff Ball, Michaela Nachtigall, Alex Ripple",,,6:08,
+Harmony of Heroes: Final Smash,,1,18,Shadow of the Core,Master Core,Super Smash Bros.,PirateCrab,,,,4:38,
+Harmony of Heroes: Final Smash,,1,19,In the Zone,Angel Island Zone,Sonic the Hedgehog 3,Konrad Petersson,,"Cameos: Title Theme (Sonic The Hedgehog), Minor Bosses (Sonic the Hedgehog 3), Knuckles the Echidna (Sonic the Hedgehog 3)",,3:37,
+Harmony of Heroes: Final Smash,,1,20,Surfing Starry Seas,Float Islands,Kirby Super Star,Pontus Lundén,,,,3:12,
+Harmony of Heroes: Final Smash,,1,21,Holiday Hunter Duo,Duck Hunt medley,Duck Hunt,Sebastian Mårtensson,Sean Haeberman,,,2:38,
+Harmony of Heroes: Final Smash,,1,22,The Journey to Castle Lololo,Castle Lololo,Kirby's Dream Land,William Vuong,,Cameos: Checker Knights (Kirby Air Ride),,3:11,
+Harmony of Heroes: Final Smash,,1,23,From the Mirror of Truth,Dark Pit’s Theme,Kid Icarus: Uprising,Spheral,,,,3:35,
+Harmony of Heroes: Final Smash,,1,24,"Toot, Whistle, Bang!",Full Steam Ahead,The Legend of Zelda: Spirit Tracks,Sean Haeberman,,Cameos: Main Theme (Legend of Zelda),,3:32,
+Harmony of Heroes: Final Smash,,1,25,Paku Paku,Pac-Man,Pac-Man,Sebastian Mårtensson,,Additional engineering by Marley Magner,,2:53,
+Harmony of Heroes: Final Smash,,1,26,Athletic Pun,Ground Theme,New Super Mario Bros.,Bernardo Limon,,,,3:25,
+Harmony of Heroes: Final Smash,,1,27,All That Remains,The Grand Finale,Bowser's Inside Story,Zack Parrish,Jeff Ball,,,4:27,
+Harmony of a Champion,,1,1,A New Adventure,Opening / Welcome to the World of Pokémon,Pokémon Red & Green Versions,"Jared Cowing, Laura Intravia, Zack Parrish",,,1474716700,5:37,
+Harmony of a Champion,,1,2,Hello World,Pallet Town,Pokémon Red & Green Versions,Bernardo Limon,,,128736658,4:12,
+Harmony of a Champion,,1,3,Generations of Oak (Professor Oak's Laboratory),Professor Oak's Laboratory,Pokémon Red & Green Versions,Alexandre Choinière,,,1234709096,2:56,
+Harmony of a Champion,,1,4,Generations of Oak (Battle Vs. Trainer),Battle Vs. Trainer,Pokémon Red & Green Versions,"Alexandre Choinière, François-Xavier Bilodeau",,,2698354333,3:19,
+Harmony of a Champion,,1,5,Step Into the World (The Road to Viridian City),The Road to Viridian City,Pokémon Red & Green Versions,Rozen,,,2624555990,2:24,
+Harmony of a Champion,,1,6,Step Into the World (Battle Vs. Wild Pokémon),Battle Vs. Wild Pokémon,Pokémon Red & Green Versions,Rozen,,,1442411569,3:20,
+Harmony of a Champion,,1,7,Through the Underbrush (Viridian Forest),Viridian Forest,Pokémon Red & Green Versions,Reven,,,2028486580,4:00,
+Harmony of a Champion,,1,8,Through the Underbrush (Battle Vs. Trainer),Battle Vs. Trainer,Pokémon Red & Green Versions,Reven,,,2093938414,4:31,
+Harmony of a Champion,,1,9,Steadfast (Pewter City),Pewter City,Pokémon Red & Green Versions,Steampianist,,,4111072358,2:52,
+Harmony of a Champion,,1,10,Steadfast (Pokémon Centre & Jigglypuff's Lullaby),Pokémon Centre & Jigglypuff's Lullaby,Pokémon Red & Green Versions,Steampianist,,,173164537,3:56,
+Harmony of a Champion,,1,11,Long Rocky Road (Guidepost),Guidepost,Pokémon Red & Green Versions,Viking Jesus,,,3705332142,1:37,
+Harmony of a Champion,,1,12,Long Rocky Road (Battle Vs. Gym Leader),Battle Vs. Gym Leader,Pokémon Red & Green Versions,Viking Jesus,,,1790135113,4:04,
+Harmony of a Champion,,1,13,Long Rocky Road (Victory against Gym Leader & Evolution),Victory against Gym Leader & Evolution,Pokémon Red & Green Versions,Viking Jesus,,,105459465,2:00,
+Harmony of a Champion,,1,14,Shorts Come Highly Recommended,The Road to Cerulean from Mt. Moon / Battle Vs. Trainer,Pokémon Red & Green Versions,Julia Seeholzer,Viridi String Quartet,,3004946933,2:41,
+Harmony of a Champion,,1,15,The Waters of Moonlight (Mt. Moon),Mt. Moon,Pokémon Red & Green Versions,"Ben Wallace, Doug Perry",,,2991542520,5:42,
+Harmony of a Champion,,1,16,The Waters of Moonlight- (Cerulean City),Cerulean City,Pokémon Red & Green Versions,"Ben Wallace, Doug Perry",,,2023861669,5:00,
+Harmony of a Champion,,1,17,Grande Marche Sur Le Pont Pépite (Nugget Bridge),Nugget Bridge,Pokémon Red & Green Versions,Ben Wallace,,,373076464,5:35,
+Harmony of a Champion,,1,18,A Sparkling Voyage (Vermilion City),Vermilion City,Pokémon Red & Green Versions,"SoundChris, Zack Parrish",,,222995188,4:04,
+Harmony of a Champion,,1,19,A Sparkling Voyage (SS. Anne),SS. Anne,Pokémon Red & Green Versions,"SoundChris, Zack Parrish",,,4237723742,2:52,
+Harmony of a Champion,,1,20,Sanctuary (The Road to Lavender Town),The Road to Lavender Town,Pokémon Red & Green Versions,Spencer Bambrick,,,819051577,1:34,
+Harmony of a Champion,,1,21,Sanctuary (Lavender Town),Lavender Town,Pokémon Red & Green Versions,Spencer Bambrick,,Choir must be credited on this track,2443871270,4:54,
+Harmony of a Champion,,1,22,Sanctuary (Entering Pokémon Tower),Entering Pokémon Tower,Pokémon Red & Green Versions,Spencer Bambrick,,Choir must be credited on this track,2588708249,2:23,
+Harmony of a Champion,,1,23,Sanctuary (Escaping Pokémon Tower),Escaping Pokémon Tower,Pokémon Red & Green Versions,Spencer Bambrick,,Choir must be credited on this track,666889026,3:45,
+Harmony of a Champion,,1,24,Waking the Giant (Battle Vs. Snorlax),Battle Vs. Snorlax,Pokémon Red & Green Versions,Christopher Hunter,,,2233725916,5:21,
+Harmony of a Champion,,1,25,Let it Ride (Cycling Theme),Cycling Theme,Pokémon Red & Green Versions,"Samuel Lidström, Stephan Wells",,,1041779690,3:24,
+Harmony of a Champion,,1,26,Let it Ride (Celadon City),Celadon City,Pokémon Red & Green Versions,"Samuel Lidström, Stephan Wells",,,1479199771,3:28,
+Harmony of a Champion,,1,27,Let it Ride (Casino),Casino,Pokémon Red & Green Versions,"Samuel Lidström, Stephan Wells",,,3244066705,4:07,
+Harmony of a Champion,,1,28,R (Team Rocket Hideout),Team Rocket Hideout,Pokémon Red & Green Versions,Samuel Lidström,,,1144304861,3:35,
+Harmony of a Champion,,1,29,R (Rocket Trainer Battle),Rocket Trainer Battle,Pokémon Red & Green Versions,Samuel Lidström,,,3407247673,4:39,
+Harmony of a Champion,,1,30,R (Silph Co.),Silph Co.,Pokémon Red & Green Versions,Samuel Lidström,,,1482904975,4:35,
+Harmony of a Champion,,1,31,Afternoon Tea at Chez Blaine (Sailing),Sailing,Pokémon Red & Green Versions,Ben Wallace,,,3483269002,5:54,
+Harmony of a Champion,,1,32,Afternoon Tea at Chez Blaine (Cinnabar Island),Cinnabar Island,Pokémon Red & Green Versions,Ben Wallace,,,4138828973,4:59,
+Harmony of a Champion,,1,33,Afternoon Tea at Chez Blaine (Pokémon Mansion),Pokémon Mansion,Pokémon Red & Green Versions,Ben Wallace,,,977101017,5:37,
+Harmony of a Champion,,1,34,Like No One Ever Was (Victory Road),Victory Road,Pokémon Red & Green Versions,Rozen,,,834844442,3:14,
+Harmony of a Champion,,1,35,Like No One Ever Was (Indigo Plateau),Original Arrangement,Pokémon Red & Green Versions,Rozen,,,551917092,2:00,
+Harmony of a Champion,,1,36,Like No One Ever Was (Battle Vs. Gym Leader),Battle Vs. Gym Leader,Pokémon Red & Green Versions,Rozen,,,1743549990,4:21,
+Harmony of a Champion,,1,37,Like No One Ever Was (Battle Vs. Champion),Battle Vs. Champion,Pokémon Red & Green Versions,Rozen,,,3785252765,4:09,
+Harmony of a Champion,,1,38,Like No One Ever Was (Hall of Fame),Hall of Fame,Pokémon Red & Green Versions,Rozen,,,3077542591,5:19,
+Harmony of a Champion,,1,39,Harmony of a Champion,Ending / Various,Pokémon Red & Green Versions,Laura Intravia,L'Orchestre de Jeux Vidéo - OJV,,3928684748,8:35,
+Harmony of a Hunter Returns,,,1,,,,,,,,,
+Harmony of a Hunter Returns,,,2,,,,,,,,,
+Harmony of a Hunter Returns,,,3,,,,,,,,,
+Harmony of a Hunter Returns,,,4,,,,,,,,,
+Harmony of a Hunter Returns,,,5,,,,,,,,,
+Harmony of a Hunter Returns,,,6,,,,,,,,,
+Harmony of a Hunter Returns,,,7,,,,,,,,,
+Harmony of a Hunter Returns,,,8,,,,,,,,,
+Harmony of a Hunter Returns,,,9,,,,,,,,,
+Harmony of a Hunter Returns,,,10,,,,,,,,,
+Harmony of a Hunter Returns,,,11,,,,,,,,,
+Harmony of a Hunter Returns,,,12,,,,,,,,,
+Harmony of a Hunter Returns,,,13,,,,,,,,,
+Harmony of a Hunter Returns,,,14,,,,,,,,,
+Harmony of a Hunter Returns,,,15,,,,,,,,,
+Harmony of a Hunter Returns,,,16,,,,,,,,,
+Harmony of a Hunter Returns,,,17,,,,,,,,,
+Harmony of a Hunter Returns,,,18,,,,,,,,,
+Harmony of a Hunter Returns,,,19,,,,,,,,,
+Harmony of a Hunter Returns,,,20,,,,,,,,,
+Harmony of a Hunter Returns,,,21,,,,,,,,,
+Harmony of a Hunter Returns,,,22,,,,,,,,,
+Harmony of a Hunter Returns,,,23,,,,,,,,,
+Harmony of a Hunter Returns,,,24,,,,,,,,,
+Harmony of a Hunter Returns,,,25,,,,,,,,,
+Harmony of a Hunter Returns,,,26,,,,,,,,,
+Harmony of a Hunter Returns,,,27,,,,,,,,,
+Harmony of a Hunter Returns,,,28,,,,,,,,,
+Harmony of a Hunter Returns,,,29,,,,,,,,,
+Harmony of a Hunter Returns,,,30,,,,,,,,,
+Harmony of a Hunter Returns,,,31,,,,,,,,,
+Harmony of a Hunter Returns,,,32,,,,,,,,,
+Harmony of a Hunter Returns,,,33,,,,,,,,,
+Harmony of a Hunter Returns,,,34,,,,,,,,,
+Harmony of a Hunter Returns,,,35,,,,,,,,,
+Harmony of a Hunter Returns,,,36,,,,,,,,,
+Harmony of a Hunter Returns,,,37,,,,,,,,,
+Harmony of a Hunter Returns,,,38,,,,,,,,,
+Harmony of a Hunter Returns,,,39,,,,,,,,,
+Harmony of a Hunter Returns,,,40,,,,,,,,,
+Harmony of a Hunter Returns,,,41,,,,,,,,,
+Harmony of a Hunter Returns,,,42,,,,,,,,,
+Harmony of a Hunter Returns,,,43,,,,,,,,,
+Harmony of a Hunter Returns,,,44,,,,,,,,,
+Harmony of a Hunter Returns,,,45,,,,,,,,,
+Harmony of a Hunter Returns,,,46,,,,,,,,,
+Harmony of a Hunter Returns,,,47,,,,,,,,,
+Harmony of a Hunter Returns,,,48,,,,,,,,,
+Harmony of a Hunter Returns,,,49,,,,,,,,,
+Harmony of a Hunter Returns,,,50,,,,,,,,,
+Harmony of a Hunter Returns,,,51,,,,,,,,,
+Harmony of a Hunter Returns,,,52,,,,,,,,,
+Harmony of a Hunter Returns,,,53,,,,,,,,,
+Harmony of a Hunter Returns,,,54,,,,,,,,,
+Harmony of a Hunter Returns,,,55,,,,,,,,,
+Harmony of a Hunter Returns,,,56,,,,,,,,,
+Harmony of a Hunter Returns,,,57,,,,,,,,,
+Harmony of a Hunter Returns,,,58,,,,,,,,,
+Harmony of a Hunter Returns,,,59,,,,,,,,,
+Harmony of a Hunter Returns,,,60,,,,,,,,,
+Harmony of a Hunter Returns,,,61,,,,,,,,,
+Harmony of a Hunter Returns,,,62,,,,,,,,,
+Harmony of a Hunter Returns,,,63,,,,,,,,,
+Harmony of a Hunter Returns,,,64,,,,,,,,,
+Harmony of a Hunter Returns,,,65,,,,,,,,,

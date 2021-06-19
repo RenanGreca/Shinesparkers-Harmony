@@ -3,9 +3,9 @@ version: '3.3'
 services:
    db:
      image: mysql:5.7
-    #  volumes:
-    #    - ./mysql_dump:/docker-entrypoint-initdb.d
-      #  - ./db_data:/var/lib/mysql
+     volumes:
+      #  - ./mysql_dump:/docker-entrypoint-initdb.d
+       - ./db_data:/var/lib/mysql
      restart: always
      environment:
        MYSQL_ROOT_PASSWORD: somewordpress
@@ -20,6 +20,7 @@ services:
      volumes:
        - ./themes:/var/www/html/wp-content/themes
        - ./plugins:/var/www/html/wp-content/plugins
+       - ./uploads:/var/www/html/wp-content/uploads
      ports:
        - "8000:80"
      restart: always
