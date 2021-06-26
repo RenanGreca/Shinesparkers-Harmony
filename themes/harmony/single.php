@@ -79,7 +79,7 @@ if ($post->post_type == "album") {
     </div>
     <div class="home-album-info single-album-info">
       <div class="home-album-contents" style="text-align: left;">
-        <?php echo $description; ?>
+        <?php echo nl2br($description); ?>
         <br/><br/>
         <?php
           $director = $meta_fields['Director'][0];
