@@ -60,7 +60,7 @@ if ($post->post_type == "album") {
     }
   </style>
 
-  <h1 id="top" style="text-align: center;">
+  <h1 id="top" style="text-align: center; font-size: 2.5rem; line-height: 2.5rem;">
     <?php echo str_replace(": ", ":<br>", $album_title); ?>
   </h1>
   <h3 style="padding-top: 0;">
