@@ -499,7 +499,7 @@ a:hover h2, a:hover h1 {
   flex: auto;
   margin-left: 50px;
   display: flex;
-  /* align-items: top; */
+  align-items: center;
   /* float: right; */
   /* max-width: 100%; */
 }
@@ -542,6 +542,10 @@ a:hover h2, a:hover h1 {
 }
 
 /* SINGLE - ALBUM */
+
+.home-album-info.single-album-info {
+  align-items: initial;
+}
 
 .album-header {
   display: flex;
