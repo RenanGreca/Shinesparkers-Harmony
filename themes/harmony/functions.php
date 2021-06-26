@@ -258,6 +258,7 @@ function insert_posts_from_csv() {
           "feat",
           "description",
           "mp3_url",
+          "flac_url",
           "runtime"
       );
 

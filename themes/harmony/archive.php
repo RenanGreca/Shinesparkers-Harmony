@@ -40,6 +40,26 @@ if ( is_category() ) {
   <h1><?php echo $title; ?></h1>
 
   <?php 
+
+  if ($uri[count($uri)-2] == "musician"):
+    ?>
+    <p>
+    Throughout our many albums, we are fortunate enough to have worked with some amazing musicians 
+    and individuals that have made these projects what they are. Below, you can view the profiles of 
+    people who have contributed to a project to learn more about them, and the music they were a part of, 
+    including external links where you can support them further.
+    </p>
+    <?php
+  endif;
+  if ($uri[count($uri)-2] == "artist"):
+    ?>
+    <p>
+    Many artists have contributed awesome artwork across our projects. This page highlights those creators. 
+    Over time we will fill their pages with information about their work 
+    and external links where you can support them further.
+    </p>
+    <?php
+  endif;
   
   $posts = [];
   if ($uri[count($uri)-2] == "musician") {

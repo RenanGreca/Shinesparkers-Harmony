@@ -60,7 +60,7 @@ if ($post->post_type == "album") {
     }
   </style>
   
-  <h1 id="top" style="text-align: center;">
+  <h1 id="top" class="post-title" style="text-align: center;">
     <?php echo str_replace(": ", ":<br>", $album_title); ?>
   </h1>
   <h3 style="padding-top: 0;">
@@ -284,6 +284,11 @@ if ($post->post_type == "track") {
     }
   </style>
 
+  
+  <h1 class="post-title">
+    <?php the_title(); ?>
+  </h1>
+
   <a href="<?php the_permalink($album->ID); ?>">
     <div class="track-album">
       <div class="track-album-cover">
@@ -301,9 +306,6 @@ if ($post->post_type == "track") {
       </div>
     </div>
   </a>
-  <h1>
-    <?php the_title(); ?>
-  </h1>
 
   <?php 
         
@@ -324,6 +326,7 @@ if ($post->post_type == "track") {
   }
   echo '<div class="source">'.$track_fields["source"][0] . $source_track .'</div>';
   
+  
   if ($album->post_title == "Harmony of a Champion"):
     ?>
       <iframe style="border: 0; margin: 10px 0; height: 42px;" 
@@ -341,6 +344,9 @@ if ($post->post_type == "track") {
           Your browser does not support the audio element.
         </audio>
       </div>
+      <h2>Download</h2>
+      <a href="<?php echo $track_fields["mp3_url"][0] ?>" rel="noopener" target="_blank">⬇ MP3</a> • 
+      <a href="<?php echo $track_fields["flac_url"][0] ?>" rel="noopener" target="_blank">⬇ FLAC</a>
     <?php
   endif;
   ?>
@@ -416,7 +422,7 @@ if ($post->post_type == "staff") {
   $musician_fields = get_post_custom();
   ?>
 
-  <h1>
+  <h1 class="post-title">
     <?php the_title(); ?>
   </h1>
 
@@ -424,12 +430,16 @@ if ($post->post_type == "staff") {
 
   <?php
   $content = $post->post_content;
-  $description = substr($content, 0, strpos($content, '<h2 id="artwork"'));
-  
-  $artwork = substr($content, strpos($content, '<h2 id="artwork"'));
+
+  if (strpos($content, '<h2 id="artwork"') !== false) {
+    $description = substr($content, 0, strpos($content, '<h2 id="artwork"'));
+    $artwork = substr($content, strpos($content, '<h2 id="artwork"'));
+  } else {
+    $description = $content;
+  }
 
   ?>
-  <p><?php echo $description; ?></p>
+  <p><?php echo apply_filters('the_content', $description); ?></p>
   <?php
 
 
@@ -573,7 +583,7 @@ if ($post->post_type == "staff") {
     <?php
   endif;
 
-  if (in_array("artist", $roles)):
+  if (strpos($content, '<h2 id="artwork"') !== false):
     echo apply_filters('the_content', $artwork);
   endif;
   

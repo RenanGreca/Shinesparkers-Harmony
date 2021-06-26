@@ -625,6 +625,7 @@ a:hover h2, a:hover h1 {
 
 .track-album {
   display: flex;
+  margin-bottom: 10px;
 }
 
 .track-album-cover {
@@ -1071,6 +1072,10 @@ h1 {
   scroll-margin-top: 250px;
 }
 
+.post-title {
+  text-align: center;
+}
+
 h2 {
   /* padding: 0; */
   /* margin: 0; */
@@ -1272,22 +1277,37 @@ hr {
   margin: 0 auto;
 }
 
+.rl-gallery-container {
+  padding: 28px;
+}
+
 .rl-basicgrid-gallery {
-  justify-content: center;
+  text-align: center;
+  display: block !important;
 }
 
 .rl-gallery-item {
   border-radius: 2%;
   transition: filter 0.3s ease;
+  display: inline-block;
+  max-width: 240px;
 }
 
 .rl-gallery-item:hover {
   filter: drop-shadow(0 0 0.4rem white);
 }
 
-.rl-gallery .rl-gallery-link .rl-gallery-item-caption {
+.rl-gallery .rl-gallery-link .rl-gallery-item-caption, .rl-gallery .rl-gallery-link .rl-gallery-item-title {
   text-align: center;
   color: inherit !important;
+}
+
+.rl-gallery .rl-gallery-link .rl-gallery-caption {
+  z-index: 0 !important;
+}
+
+.rl-gallery-item img {
+  background-color: black;
 }
 
 .mfp-img {
@@ -1312,6 +1332,10 @@ hr {
 
 .infoLayer ul {
   margin-top: 15px !important;
+}
+
+#origincode_videogallery {
+  margin-left: 0;
 }
 
 section #origincode_videogallery li .overLayer ul li:first-child, section #origincode_videogallery li .infoLayer ul li:first-child {
