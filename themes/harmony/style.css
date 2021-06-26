@@ -667,6 +667,15 @@ a:hover h2, a:hover h1 {
   margin-bottom: 50px;
 }
 
+.archive-list h1 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+
+.archive-list p {
+  line-height: 1.5rem;
+}
+
 .list {
   display: block;
   margin: 0 auto 50px auto;
@@ -1241,6 +1250,7 @@ hr {
 .staff-list {
   display: flex;
   flex-direction: row;
+  margin-top: 2rem;
 }
 
 .staff-list-row {
@@ -1249,7 +1259,9 @@ hr {
   flex: 1;
 }
 
-
+.staff-list-row a {
+  margin-bottom: 0.75rem;
+}
 
 .bwg-item0 {
   border-radius: 2% !important;
