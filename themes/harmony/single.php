@@ -24,7 +24,7 @@ if ($post->post_type == "album") {
 
   $content = $post->post_content;
   $description = substr($content, 0, strpos($content, '<h2 id="download"'));
-  
+
   $download = substr($content, strpos($content, '<h2 id="download"'), strpos($content, '<h2 id="artwork"')-strpos($content, '<h2 id="download"'));
 
   $artwork = substr($content, strpos($content, '<h2 id="artwork"'));
@@ -59,21 +59,21 @@ if ($post->post_type == "album") {
       color: white;
     }
   </style>
-  
+
   <h1 id="top" class="post-title" style="text-align: center;">
     <?php echo str_replace(": ", ":<br>", $album_title); ?>
   </h1>
   <h3 style="padding-top: 0;">
     <?php echo $meta_fields['year'][0]; ?>
   </h3>
-    
+
   <div class="home-album">
     <div class="home-album-cover">
       <img src="<?php echo $image ?>" />
       <div class="album-links">
-        <a href="#download">Download</a> • 
-        <a href="#tracks">Tracks</a> • 
-        <a href="#artwork">Artwork</a> • 
+        <a href="#download">Download</a> •
+        <a href="#tracks">Tracks</a> •
+        <a href="#artwork">Artwork</a> •
         <a href="#extras">Extras</a>
       </div>
     </div>
@@ -95,7 +95,7 @@ if ($post->post_type == "album") {
             $director = trim($director);
             $results = $wpdb->get_results( "SELECT * FROM $wpdb->posts WHERE `post_type`='staff' AND `post_title`='$director'" );
             // print_r($results);
-            
+
             if (count($results) > 0) {
               $list[] = '<a href="'.get_permalink($results[0]->ID).'">'.$results[0]->post_title.'</a>';
             } else {
@@ -110,16 +110,16 @@ if ($post->post_type == "album") {
           if ($album_title == "Harmony of a Champion") {
             echo "<div style='margin-top: 4px;'>Sound Design — Gina Zdanowicz, Spencer Bambrick</div>";
           }
-          
+
         ?>
       </div>
     </div>
   </div>
-  
+
   <hr/>
   <?php
   echo $download;
-  
+
   // Find tracks that belong to this album
   $args = array(
     'numberposts'      => 200,
@@ -127,21 +127,21 @@ if ($post->post_type == "album") {
     'post_status'      => 'publish',
     'meta_key'         => 'album',
     'meta_value'       => $post->post_title
-    
+
   );
   $tracks = get_posts( $args );
-  
+
   // Sort tracks by group and track number
   usort($tracks, function ($a, $b) {
     $a_trackno = get_post_meta( $a->ID, 'track_no', true);
     $b_trackno = get_post_meta( $b->ID, 'track_no', true);
-    
+
     $a_groupno = get_post_meta( $a->ID, 'group_no', true);
     $b_groupno = get_post_meta( $b->ID, 'group_no', true);
-    
+
     return ($a_groupno > $b_groupno) || (($a_groupno == $b_groupno) && ($a_trackno > $b_trackno));
   });
-  
+
   $current_group = "";
   ?>
   <hr/>
@@ -151,10 +151,10 @@ if ($post->post_type == "album") {
   foreach ($tracks as $post):
     // $post = $tracks[$i];
     setup_postdata($post);
-    
+
     $track_fields = get_post_custom();
     $track_no = $track_fields["track_no"][0];
-    
+
     if ($track_fields['group'][0] != $current_group) {
       $current_group = $track_fields['group'][0];
       ?>
@@ -162,27 +162,27 @@ if ($post->post_type == "album") {
       <?php
     }
     ?>
-    
+
     <li>
-    
+
     <div class="album-track" style="background: rgb(255 255 255 / <?php echo ( ($track_no % 2 == 0 ) ? "5%" : "0%" ); ?> );">
       <div class="album-track-info">
         <h4>
           <a href="<?php the_permalink(); ?>">
-          <?php 
+          <?php
           echo $track_no . ". ";
           the_title(); ?>
           </a>
         </h4>
 
-        <?php 
-        
+        <?php
+
         echo "by ";
         $musicians = explode(',', $track_fields["musician"][0]);
         $list = get_staff_links($musicians);
 
         echo implode(", ", $list);
-        
+
         $musicians = explode(',', $track_fields["feat"][0]);
         if (strlen($musicians[0]) > 0) {
           echo " feat. ";
@@ -201,9 +201,9 @@ if ($post->post_type == "album") {
       <?php
       if ($album_title == "Harmony of a Champion"):
       ?>
-      <iframe style="border: 0; height: 42px;" 
+      <iframe style="border: 0; height: 42px;"
               src="https://bandcamp.com/EmbeddedPlayer/album=2814907003/size=small/bgcol=333333/linkcol=e99708/track=<?php echo $track_fields["mp3_url"][0]; ?>/transparent=true/" seamless>
-              
+
               <a href="https://shinesparkers.bandcamp.com/album/harmony-of-a-champion-music-from-pok-mon-red-and-green-versions">
                 Harmony of a Champion (Music from Pokémon Red and Green Versions)
               </a>
@@ -222,15 +222,15 @@ if ($post->post_type == "album") {
     </div>
     <!-- <?php echo ($track_fields["feat"][0] != "" ? " feat. ".$track_fields["feat"][0] : "" ) ?> -->
 
-    
+
     <!-- <hr> -->
     </li>
-    <?php 
-    
+    <?php
+
     wp_reset_postdata();
     endforeach; ?>
   </ul>
-  
+
   <hr/>
   <?php
 
@@ -245,7 +245,7 @@ if ($post->post_type == "album") {
 // =================================================================
 
 if ($post->post_type == "track") {
-  
+
   $album = $meta_fields['album'][0];
   $albums = $wpdb->get_results( "SELECT * FROM $wpdb->posts WHERE `post_type`='album' AND `post_title`='$album'" );
   $album = $albums[0];
@@ -255,7 +255,7 @@ if ($post->post_type == "track") {
   $track_fields = get_post_custom();
   $album_fields = get_post_custom($album->ID);
   $image = wp_get_attachment_image_src( get_post_thumbnail_id( $album->ID ), 'single-post-thumbnail' )[0];
-  
+
   ?>
   <style>
     body {
@@ -284,7 +284,7 @@ if ($post->post_type == "track") {
     }
   </style>
 
-  
+
   <h1 class="post-title">
     <?php the_title(); ?>
   </h1>
@@ -307,13 +307,13 @@ if ($post->post_type == "track") {
     </div>
   </a>
 
-  <?php 
-        
+  <?php
+
   echo "By ";
   $musicians = explode(',', $track_fields["musician"][0]);
   $list = get_staff_links($musicians);
   echo implode(", ", $list);
-  
+
   $musicians = explode(',', $track_fields["feat"][0]);
   if (strlen($musicians[0]) > 0) {
     echo " feat. ";
@@ -325,13 +325,13 @@ if ($post->post_type == "track") {
     $source_track = " (" . $track_fields["original_game"][0] . ")";
   }
   echo '<div class="source">'.$track_fields["source"][0] . $source_track .'</div>';
-  
-  
+
+
   if ($album->post_title == "Harmony of a Champion"):
     ?>
-      <iframe style="border: 0; margin: 10px 0; height: 42px;" 
+      <iframe style="border: 0; margin: 10px 0; height: 42px;"
               src="https://bandcamp.com/EmbeddedPlayer/album=2814907003/size=small/bgcol=333333/linkcol=e99708/track=<?php echo $track_fields["mp3_url"][0]; ?>/transparent=true/" seamless>
-              
+
               <a href="https://shinesparkers.bandcamp.com/album/harmony-of-a-champion-music-from-pok-mon-red-and-green-versions">
                 Harmony of a Champion (Music from Pokémon Red and Green Versions)
               </a>
@@ -345,7 +345,7 @@ if ($post->post_type == "track") {
         </audio>
       </div>
       <h2>Download</h2>
-      <a href="<?php echo $track_fields["mp3_url"][0] ?>" rel="noopener" target="_blank">⬇ MP3</a> • 
+      <a href="<?php echo $track_fields["mp3_url"][0] ?>" rel="noopener" target="_blank">⬇ MP3</a> •
       <a href="<?php echo $track_fields["flac_url"][0] ?>" rel="noopener" target="_blank">⬇ FLAC</a>
     <?php
   endif;
@@ -364,7 +364,7 @@ if ($post->post_type == "track") {
 
   <?php
   // wp_reset_postdata();
-  
+
 }
 
 // =================================================================
@@ -378,7 +378,7 @@ if ($post->post_type == "staff") {
     'numberposts'      => 50,
     'post_type'        => 'track',
     'post_status'      => 'publish',
-    
+
     'meta_query' => array (
       'relation' => 'OR',
       array (
@@ -403,17 +403,17 @@ if ($post->post_type == "staff") {
 
     $a_albumno = get_post_meta( $a_album[0]->ID, 'number', true);
     $b_albumno = get_post_meta( $b_album[0]->ID, 'number', true);
-    
+
     $a_trackno = get_post_meta( $a->ID, 'track_no', true);
     $b_trackno = get_post_meta( $b->ID, 'track_no', true);
-    
+
     $a_groupno = get_post_meta( $a->ID, 'group_no', true);
     $b_groupno = get_post_meta( $b->ID, 'group_no', true);
-    
+
     $track_order = ($a_groupno > $b_groupno) || (($a_groupno == $b_groupno) && ($a_trackno > $b_trackno));
 
-    $track_order =  ($b_albumno > $a_albumno) || 
-                    (($a_albumno == $b_albumno) && ($track_order));// || 
+    $track_order =  ($b_albumno > $a_albumno) ||
+                    (($a_albumno == $b_albumno) && ($track_order));// ||
                     //((($a_albumno == $b_albumno) && ($a_groupno == $b_groupno)) && ($a_trackno > $b_trackno));
 
     return $track_order;
@@ -426,7 +426,7 @@ if ($post->post_type == "staff") {
     <?php the_title(); ?>
   </h1>
 
-  
+
 
   <?php
   $content = $post->post_content;
@@ -448,7 +448,7 @@ if ($post->post_type == "staff") {
   for ($i=1; $i<=3; $i+=1) {
     $url = $musician_fields["portfolio_url".$i][0];
     $title = $musician_fields["portfolio_title".$i][0];
-    
+
     if ($url && title) {
       $list[] = "<a target=\"_blank\" href=".$url.">".$title."</a>";
     }
@@ -459,24 +459,24 @@ if ($post->post_type == "staff") {
     echo "<h2>Portfolio & Contact</h2>";
     echo '<div class="portfolio-links">'.implode(" • ", $list).'</div>';
   }
-  
+
   $terms = wp_get_post_terms( $post->ID, 'role');
   foreach ( $terms as $term ) {
       $roles[] = $term->slug;
   }
 
   // print_r($roles);
-  
+
   if (in_array("musician", $roles)):
-  
+
     ?>
     <h2>Tracks</h2>
     <ul class="album-track-list">
-    <?php 
+    <?php
     $i=0;
     foreach ($tracks as $post):
       // setup_postdata($post);
-      
+
       $track_fields = get_post_custom();
 
       $album = $track_fields['album'][0];
@@ -484,7 +484,7 @@ if ($post->post_type == "staff") {
       $image = wp_get_attachment_image_src( get_post_thumbnail_id( $album->ID ), 'single-post-thumbnail' )[0];
 
       ?>
-      
+
       <li>
 
       <!-- <a href="<?php the_permalink($post->ID); ?>">
@@ -504,7 +504,7 @@ if ($post->post_type == "staff") {
           </div>
         </div>
       </a> -->
-      
+
       <div class="album-track" style="background: rgb(255 255 255 / <?php echo ( ($i % 2 == 0 ) ? "5%" : "0%" ); ?> );">
         <div class="album-track-cover">
             <img src="<?php echo $image; ?>" />
@@ -512,26 +512,26 @@ if ($post->post_type == "staff") {
         <div class="album-track-info">
           <h4>
             <a href="<?php the_permalink(); ?>">
-            <?php 
+            <?php
             the_title(); ?>
             </a>
           </h4>
 
-          <?php 
+          <?php
           $i += 1;
-          
-          // echo $meta_fields["musician"][0]; 
+
+          // echo $meta_fields["musician"][0];
           ?>
           <div style="margin-bottom: -5px;">
           from <a href="<?php echo get_permalink($album->ID); ?>"> <?php echo $album->post_title; ?> </a>
           </div>
           <?php
 
-          
+
           $musicians = explode(',', $track_fields["musician"][0]);
           $list = get_staff_links($musicians);
           // echo "<div>by ".implode(", ", $list)."";
-          
+
           $musicians = explode(',', $track_fields["feat"][0]);
           if (strlen($musicians[0]) > 0) {
             // echo " feat. ";
@@ -550,9 +550,9 @@ if ($post->post_type == "staff") {
         <?php
         if ($track_fields["album"][0] == "Harmony of a Champion"):
         ?>
-        <iframe style="border: 0; height: 42px;" 
+        <iframe style="border: 0; height: 42px;"
                 src="https://bandcamp.com/EmbeddedPlayer/album=2814907003/size=small/bgcol=333333/linkcol=e99708/track=<?php echo $track_fields["mp3_url"][0]; ?>/transparent=true/" seamless>
-                
+
                 <a href="https://shinesparkers.bandcamp.com/album/harmony-of-a-champion-music-from-pok-mon-red-and-green-versions">
                   Harmony of a Champion (Music from Pokémon Red and Green Versions)
                 </a>
@@ -571,11 +571,11 @@ if ($post->post_type == "staff") {
       </div>
       <!-- <?php echo ($track_fields["feat"][0] != "" ? " feat. ".$track_fields["feat"][0] : "" ) ?> -->
 
-      
+
       <!-- <hr> -->
       </li>
-      <?php 
-      
+      <?php
+
       wp_reset_postdata();
       endforeach; ?>
       </ul>
@@ -586,14 +586,14 @@ if ($post->post_type == "staff") {
   if (strpos($content, '<h2 id="artwork"') !== false):
     echo apply_filters('the_content', $artwork);
   endif;
-  
+
 }
 
 // // If comments are open or we have at least one comment, load up the comment template
 // if ( comments_open() || '0' != get_comments_number() )
 //   comments_template();
 ?>
-    
+
 <?php endwhile; // end of the loop. ?>
 
 </div>
