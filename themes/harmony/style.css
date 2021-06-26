@@ -239,7 +239,7 @@ a.navbar-link:hover {
 
   .nav li a {
     margin: 0 10px;
-  }  
+  }
 
   .brand {
     height: 50px;
@@ -275,7 +275,7 @@ a.navbar-link:hover {
   }
 
 }
-/* 
+/*
 @media (min-width: 850px) {
   .header-container {
     width: var(--container-width-1200);
@@ -632,7 +632,7 @@ a:hover h2, a:hover h1 {
   flex: initial;
 }
 
-.track-album-cover img, 
+.track-album-cover img,
 .album-track-cover img {
   width: 50px;
   height: auto;
