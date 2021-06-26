@@ -566,6 +566,20 @@ a:hover h2, a:hover h1 {
   height: auto;
 }
 
+h2#download {
+  font-size: 2rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.download-links {
+  text-align: center;
+}
+
+.download-links a {
+  font-size: 1.5rem;
+  margin: 0 10px;
+}
 
 .alignnone {
   /* width: 32%; */
