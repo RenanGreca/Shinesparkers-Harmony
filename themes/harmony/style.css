@@ -1372,3 +1372,14 @@ section #origincode_videogallery li .overLayer ul li h2, section #origincode_vid
   background-color: transparent !important;
   box-shadow: none !important;
 }
+
+/* TEAM PAGE */
+
+.review-content h1 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+
+.review-content h2 {
+  margin-top: 3rem;
+}
