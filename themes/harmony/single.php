@@ -416,7 +416,7 @@ if ($post->post_type == "staff") {
   $musician_fields = get_post_custom();
   ?>
 
-  <h1>
+  <h1 style="font-size: 2.5rem; line-height: 2.5rem;">
     <?php the_title(); ?>
   </h1>
 
