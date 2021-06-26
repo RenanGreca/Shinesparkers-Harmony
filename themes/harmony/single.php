@@ -77,7 +77,7 @@ if ($post->post_type == "album") {
         <a href="#extras">Extras</a>
       </div>
     </div>
-    <div class="home-album-info">
+    <div class="home-album-info single-album-info">
       <div class="home-album-contents" style="text-align: left;">
         <?php echo $description; ?>
         <br/><br/>

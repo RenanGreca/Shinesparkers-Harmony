@@ -543,6 +543,14 @@ a:hover h2, a:hover h1 {
 
 /* SINGLE - ALBUM */
 
+.home-album-info.single-album-info {
+  align-items: initial;
+}
+
+.home-album-info.single-album-info .home-album-contents {
+  line-height: 1.5rem;
+}
+
 .album-header {
   display: flex;
   flex-direction: row;
