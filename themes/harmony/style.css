@@ -1395,3 +1395,7 @@ section #origincode_videogallery li .overLayer ul li h2, section #origincode_vid
 .review-content h2 {
   margin-top: 3rem;
 }
+
+.review-content p {
+  line-height: 1.5rem;
+}
