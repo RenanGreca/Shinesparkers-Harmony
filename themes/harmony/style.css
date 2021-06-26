@@ -499,7 +499,7 @@ a:hover h2, a:hover h1 {
   flex: auto;
   margin-left: 50px;
   display: flex;
-  align-items: center;
+  /* align-items: top; */
   /* float: right; */
   /* max-width: 100%; */
 }
