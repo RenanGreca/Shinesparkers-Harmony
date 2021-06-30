@@ -108,7 +108,7 @@ if ($post->post_type == "album") {
             echo "Assistant Director — ".implode(", ", $list);
           }
           if ($album_title == "Harmony of a Champion") {
-            echo "<div style='margin-top: 4px;'>Sound Design — Gina Zdanowicz, Spencer Bambrick</div>";
+            echo "<div style='margin-top: 4px;'>Sound Design — Gina Zdanowicz, <a href=\"/staff/spencer-bambrick/\">Spencer Bambrick</a></div>";
           }
 
         ?>
