@@ -8,14 +8,18 @@ $title = $post->post_title;
 
 ?>
 
+<title><?php echo $title; ?> - Harmony of Shinesparkers</title>
+<meta property="og:title" content="<?php echo $title; ?> - Harmony of Shinesparkers">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://harmony.shinesparkers.net/team/">
+<meta property="og:image" content="<?php echo site_url(); ?>/wp-content/uploads/2021/06/Pallet_Town-compressed.jpg">
+
 <div class="home-spacer"></div>
 <div class="home-image">
   <img src="<?php echo site_url(); ?>/wp-content/uploads/2021/06/Pallet_Town-compressed.jpg"/>
 </div>
 
   <!-- <link href="<?php echo get_bloginfo('template_url'); ?>/css/single.css" rel="stylesheet"> -->
-
-  <title><?php echo $title; ?> - Harmony of Shinesparkers</title>
 
   <div class="container">
     <div class="content review-content">

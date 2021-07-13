@@ -13,7 +13,7 @@ if ( is_category() ) {
   $uri = explode('/', $_SERVER['REQUEST_URI']);
   $title = get_user_by('slug', $uri[count($uri)-2])->display_name;
 
-  
+
 } else {
 
   $uri = explode('/', $_SERVER['REQUEST_URI']);
@@ -25,12 +25,16 @@ if ( is_category() ) {
     $title = "Artists";
     $banner_url = "2021/06/Final-Destination_compressed.jpg";
   }
-  
+
   //post_type_archive_title('', false);
 }
 
 ?>
 <title><?php echo $title; ?> - Harmony of Shinesparkers</title>
+<meta property="og:title" content="<?php echo $title; ?> - Harmony of Shinesparkers">
+<meta property="og:type" content="website">
+<meta property="og:image" content="<?php echo site_url(); ?>/wp-content/uploads/<?php echo $banner_url; ?>">
+
 <div class="home-spacer"></div>
 <div class="home-image">
   <img src="<?php echo site_url(); ?>/wp-content/uploads/<?php echo $banner_url; ?>"/>
@@ -39,14 +43,14 @@ if ( is_category() ) {
 <div class="archive-list">
   <h1><?php echo $title; ?></h1>
 
-  <?php 
+  <?php
 
   if ($uri[count($uri)-2] == "musician"):
     ?>
     <p>
-    Throughout our many albums, we are fortunate enough to have worked with some amazing musicians 
-    and individuals that have made these projects what they are. Below, you can view the profiles of 
-    people who have contributed to a project to learn more about them, and the music they were a part of, 
+    Throughout our many albums, we are fortunate enough to have worked with some amazing musicians
+    and individuals that have made these projects what they are. Below, you can view the profiles of
+    people who have contributed to a project to learn more about them, and the music they were a part of,
     including external links where you can support them further.
     </p>
     <?php
@@ -54,13 +58,13 @@ if ( is_category() ) {
   if ($uri[count($uri)-2] == "artist"):
     ?>
     <p>
-    Many artists have contributed awesome artwork across our projects. This page highlights those creators. 
-    Over time we will fill their pages with information about their work 
+    Many artists have contributed awesome artwork across our projects. This page highlights those creators.
+    Over time we will fill their pages with information about their work
     and external links where you can support them further.
     </p>
     <?php
   endif;
-  
+
   $posts = [];
   if ($uri[count($uri)-2] == "musician") {
     $args = array(
@@ -74,7 +78,7 @@ if ( is_category() ) {
             'terms'    => 'musician',
         ),
       ),
-      
+
     );
     $posts = get_posts( $args );
     // print_r($posts);
@@ -92,12 +96,12 @@ if ( is_category() ) {
             'terms'    => 'artist',
         ),
       ),
-      
+
     );
     $posts = get_posts( $args );
     // print_r($posts);
   }
-  
+
   if (($uri[count($uri)-2] == "artist") || ($uri[count($uri)-2] == "musician")):
     $list = [];
     $sublist = [];
@@ -116,13 +120,13 @@ if ( is_category() ) {
           $roles[] = $role->name;
         }
       }
-      
+
 
       $list[] = '<a href="'.get_permalink($post->ID).'">'. $post->post_title .'</a>';
       $i += 1;
       // <!-- <h4><?php echo implode($roles, ", ") </h4> -->
 
-    endforeach; 
+    endforeach;
 
     // $list2 = [];
     $sublist = [];
@@ -143,7 +147,7 @@ if ( is_category() ) {
 
     ?>
 
-      
+
         <div class="staff-list-row">
         <?php
         foreach ($list as $link):

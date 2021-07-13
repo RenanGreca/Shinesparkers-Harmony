@@ -4,6 +4,8 @@
 <?php while ( have_posts() ) : the_post(); ?>
 
 <title><?php the_title(); ?> - Harmony of Shinesparkers</title>
+<meta property="og:title" content="<?php echo the_title(); ?> - Harmony of Shinesparkers">
+<meta property="og:type" content="website">
 
 <div class="spacer"></div>
 <div class="container">
@@ -11,6 +13,8 @@
 $meta_fields = get_post_custom();
 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0];
 ?>
+
+<meta property="og:image" content="<?php echo $image; ?>">
 
 <!-- <?php get_template_part( 'partials/blog/content', get_post_format() ); ?> -->
 
