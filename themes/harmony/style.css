@@ -1423,3 +1423,7 @@ section #origincode_videogallery li .overLayer ul li h2, section #origincode_vid
 .review-content p {
   line-height: 1.5rem;
 }
+
+#rl-gallery-container-1 .rl-basicgrid-gallery .rl-gallery-item {
+  margin: 4px !important;
+}
