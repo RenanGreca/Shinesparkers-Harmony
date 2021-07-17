@@ -48,7 +48,12 @@ function get_staff_links($musicians) {
   foreach ($musicians as $musician) {
     $musician = filter_var(trim($musician), FILTER_SANITIZE_MAGIC_QUOTES);
     $results = $wpdb->get_results( "SELECT * FROM $wpdb->posts WHERE `post_type`='staff' AND `post_title` LIKE '$musician'" );
-    $list[] = '<a href="'.get_permalink($results[0]->ID).'">'.$results[0]->post_title.'</a>';
+
+    if (!emptY($results)) {
+        $list[] = '<a href="'.get_permalink($results[0]->ID).'">'.$results[0]->post_title.'</a>';
+    } else {
+        $list[] = $musician;
+    }
   }
   return $list;
 }
