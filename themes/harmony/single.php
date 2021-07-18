@@ -14,7 +14,9 @@ $meta_fields = get_post_custom();
 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0];
 ?>
 
-<meta property="og:image" content="<?php echo $image; ?>">
+<?php if ($image): ?>
+    <meta property="og:image" content="<?php echo $image; ?>">
+<?php endif; ?>
 
 <!-- <?php get_template_part( 'partials/blog/content', get_post_format() ); ?> -->
 
@@ -261,6 +263,11 @@ if ($post->post_type == "track") {
   $image = wp_get_attachment_image_src( get_post_thumbnail_id( $album->ID ), 'single-post-thumbnail' )[0];
 
   ?>
+
+    <?php if ($image): ?>
+        <meta property="og:image" content="<?php echo $image; ?>">
+    <?php endif; ?>
+
   <style>
     body {
       background-color: #<?php echo $album_fields['bg_color'][0]; ?>;
