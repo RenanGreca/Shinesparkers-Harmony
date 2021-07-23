@@ -36,6 +36,28 @@ if ($post->post_type == "album") {
   $artwork = substr($content, strpos($content, '<h2 id="artwork"'));
 
   $album_title = $post->post_title;
+
+    // Find tracks that belong to this album
+    $args = array(
+        'numberposts'      => 200,
+        'post_type'        => 'track',
+        'post_status'      => 'publish',
+        'meta_key'         => 'album',
+        'meta_value'       => $post->post_title
+
+    );
+    $tracks = get_posts( $args );
+
+    // Sort tracks by group and track number
+    usort($tracks, function ($a, $b) {
+        $a_trackno = get_post_meta( $a->ID, 'track_no', true);
+        $b_trackno = get_post_meta( $b->ID, 'track_no', true);
+
+        $a_groupno = get_post_meta( $a->ID, 'group_no', true);
+        $b_groupno = get_post_meta( $b->ID, 'group_no', true);
+
+        return ($a_groupno > $b_groupno) || (($a_groupno == $b_groupno) && ($a_trackno > $b_trackno));
+    });
   ?>
 
   <style>
@@ -78,7 +100,7 @@ if ($post->post_type == "album") {
       <img src="<?php echo $image ?>" />
       <div class="album-links">
         <a href="#download">Download</a> •
-        <a href="#tracks">Tracks</a> •
+        <?php if (!empty($tracks)): ?><a href="#tracks">Tracks</a> •<?php endif; ?>
         <a href="#artwork">Artwork</a> •
         <a href="#extras">Extras</a>
       </div>
@@ -126,31 +148,10 @@ if ($post->post_type == "album") {
   <?php
   echo $download;
 
-  // Find tracks that belong to this album
-  $args = array(
-    'numberposts'      => 200,
-    'post_type'        => 'track',
-    'post_status'      => 'publish',
-    'meta_key'         => 'album',
-    'meta_value'       => $post->post_title
-
-  );
-  $tracks = get_posts( $args );
-
-  // Sort tracks by group and track number
-  usort($tracks, function ($a, $b) {
-    $a_trackno = get_post_meta( $a->ID, 'track_no', true);
-    $b_trackno = get_post_meta( $b->ID, 'track_no', true);
-
-    $a_groupno = get_post_meta( $a->ID, 'group_no', true);
-    $b_groupno = get_post_meta( $b->ID, 'group_no', true);
-
-    return ($a_groupno > $b_groupno) || (($a_groupno == $b_groupno) && ($a_trackno > $b_trackno));
-  });
-
   $current_group = "";
   ?>
   <hr/>
+<?php if (!empty($tracks)): ?>
   <h2 id="tracks">Tracks</h2>
   <ul class="album-track-list">
   <?php
@@ -238,6 +239,7 @@ if ($post->post_type == "album") {
   </ul>
 
   <hr/>
+<?php endif; ?>
   <?php
 
   echo apply_filters('the_content', $artwork);
