@@ -1427,3 +1427,7 @@ section #origincode_videogallery li .overLayer ul li h2, section #origincode_vid
 #rl-gallery-container-1 .rl-basicgrid-gallery .rl-gallery-item {
   margin: 4px !important;
 }
+
+.mfp-bg, .mfp-container, .mfp-wrap {
+  height: 100vh !important;
+}
