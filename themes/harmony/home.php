@@ -66,10 +66,8 @@ foreach ($albums as $post):
         </div>
       </div>
     </div>
-  <?
+  <?php
 
 endforeach;
 
 get_footer();
-
-?>
