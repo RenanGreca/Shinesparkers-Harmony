@@ -5,6 +5,7 @@
 
 # ignore everything in the "wp-content" directory, except:
 # "mu-plugins", "plugins", "themes" directory
+plugins/simply-static/static-files/*
 themes/*
 !themes/harmony
 
