@@ -1,5 +1,10 @@
 <?php get_header(); ?>
+
 <title>Harmony of Shinesparkers</title>
+<meta property="og:title" content="Harmony of Shinesparkers">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://harmony.shinesparkers.net/">
+<meta property="og:image" content="<?php echo site_url(); ?>/wp-content/uploads/2021/06/Metroid25_Poster-compressed.jpg">
 
 <div class="home-spacer"></div>
 
@@ -13,7 +18,7 @@ $args = array(
   'numberposts'      => 30,
   'post_type'        => 'album',
   'post_status'      => 'publish'
-  
+
 );
 $albums = get_posts( $args );
 
@@ -44,7 +49,7 @@ foreach ($albums as $post):
     <div id="album-<?php echo $post->ID ?>"
         style="color: #<?php echo $meta_fields["Color"][0]; ?>;
               background-color: #<?php echo $meta_fields["bg_color"][0]; ?>">
-      <div class="container home-album"> 
+      <div class="container home-album">
         <div class="home-album-cover">
           <a href="<?php the_permalink(); ?>">
             <img src="<?php echo $image; ?>" />
@@ -53,7 +58,7 @@ foreach ($albums as $post):
         <div class="home-album-info">
           <div class="home-album-contents">
             <a href="<?php the_permalink(); ?>">
-              <h2><?php echo $meta_fields['year'][0]; ?></h2>  
+              <h2><?php echo $meta_fields['year'][0]; ?></h2>
               <h1><?php echo str_replace(": ", ":<br>", $post->post_title); ?></h1>
             </a>
             <?php echo $excerpt; ?>
@@ -61,10 +66,8 @@ foreach ($albums as $post):
         </div>
       </div>
     </div>
-  <?
+  <?php
 
 endforeach;
 
 get_footer();
-
-?>

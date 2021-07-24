@@ -239,7 +239,7 @@ a.navbar-link:hover {
 
   .nav li a {
     margin: 0 10px;
-  }  
+  }
 
   .brand {
     height: 50px;
@@ -275,7 +275,7 @@ a.navbar-link:hover {
   }
 
 }
-/* 
+/*
 @media (min-width: 850px) {
   .header-container {
     width: var(--container-width-1200);
@@ -543,6 +543,14 @@ a:hover h2, a:hover h1 {
 
 /* SINGLE - ALBUM */
 
+.home-album-info.single-album-info {
+  align-items: initial;
+}
+
+.home-album-info.single-album-info .home-album-contents {
+  line-height: 1.5rem;
+}
+
 .album-header {
   display: flex;
   flex-direction: row;
@@ -558,6 +566,20 @@ a:hover h2, a:hover h1 {
   height: auto;
 }
 
+h2#download {
+  font-size: 2rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.download-links {
+  text-align: center;
+}
+
+.download-links a {
+  font-size: 1.5rem;
+  margin: 0 10px;
+}
 
 .alignnone {
   /* width: 32%; */
@@ -632,7 +654,7 @@ a:hover h2, a:hover h1 {
   flex: initial;
 }
 
-.track-album-cover img, 
+.track-album-cover img,
 .album-track-cover img {
   width: 50px;
   height: auto;
@@ -665,6 +687,15 @@ a:hover h2, a:hover h1 {
 .archive-list {
   margin: 0 auto;
   margin-bottom: 50px;
+}
+
+.archive-list h1 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+
+.archive-list p {
+  line-height: 1.5rem;
 }
 
 .list {
@@ -1074,6 +1105,8 @@ h1 {
 
 .post-title {
   text-align: center;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
 }
 
 h2 {
@@ -1241,6 +1274,7 @@ hr {
 .staff-list {
   display: flex;
   flex-direction: row;
+  margin-top: 2rem;
 }
 
 .staff-list-row {
@@ -1249,7 +1283,9 @@ hr {
   flex: 1;
 }
 
-
+.staff-list-row a {
+  margin-bottom: 0.75rem;
+}
 
 .bwg-item0 {
   border-radius: 2% !important;
@@ -1371,4 +1407,27 @@ section #origincode_videogallery li .overLayer ul li h2, section #origincode_vid
   min-height: 0 !important;
   background-color: transparent !important;
   box-shadow: none !important;
+}
+
+/* TEAM PAGE */
+
+.review-content h1 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+
+.review-content h2 {
+  margin-top: 3rem;
+}
+
+.review-content p {
+  line-height: 1.5rem;
+}
+
+#rl-gallery-container-1 .rl-basicgrid-gallery .rl-gallery-item {
+  margin: 4px !important;
+}
+
+.mfp-bg, .mfp-container, .mfp-wrap {
+  height: 100vh !important;
 }

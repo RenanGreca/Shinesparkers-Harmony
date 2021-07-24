@@ -22,3 +22,12 @@ node_modules/
 *.log
 *.sql
 *.sqlite
+
+# ignore ide directories
+.idea/
+
+# ignore custom stuff
+db_data/ibtmp1
+plugins/simply-static/static-files
+plugins/simply-static/debug.txt
+plugins/wp-crontrol
