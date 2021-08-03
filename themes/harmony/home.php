@@ -48,7 +48,7 @@ foreach ($albums as $post):
 
     <div id="album-<?php echo $post->ID ?>"
         style="color: #<?php echo $meta_fields["Color"][0]; ?>;
-              background-color: #<?php echo $meta_fields["bg_color"][0]; ?>">
+              background-color: #<?php echo $meta_fields["Background color"][0]; ?>">
       <div class="container home-album">
         <div class="home-album-cover">
           <a href="<?php the_permalink(); ?>">

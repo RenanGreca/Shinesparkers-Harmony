@@ -63,7 +63,7 @@ function read_csv($custom_post_type) {
   $data = array();
   $errors = array();
 
-  $file = site_url() . '/wp-content/uploads/2021/06/' . $custom_post_type . '.csv';
+  $file = site_url() . '/wp-content/uploads/2021/07/' . $custom_post_type . '.csv';
 
   // Check if file is writable, then open it in 'read only' mode
   if ( $_file = fopen( $file, "r" ) ) {
@@ -284,4 +284,5 @@ function insert_posts_from_csv() {
 }
 
 add_action( 'admin_init', 'insert_posts_from_csv' );
+
 ?>

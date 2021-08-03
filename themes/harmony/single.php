@@ -62,7 +62,7 @@ if ($post->post_type == "album") {
 
   <style>
     body {
-      background-color: #<?php echo $meta_fields['bg_color'][0]; ?>;
+      background-color: #<?php echo $meta_fields['Background color'][0]; ?>;
     }
 
     h1, h2, h3, h4 {
@@ -272,7 +272,7 @@ if ($post->post_type == "track") {
 
   <style>
     body {
-      background-color: #<?php echo $album_fields['bg_color'][0]; ?>;
+      background-color: #<?php echo $album_fields['Background color'][0]; ?>;
     }
 
     h1, h2, h3 {
