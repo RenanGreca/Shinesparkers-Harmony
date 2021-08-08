@@ -490,7 +490,7 @@ a:hover h2, a:hover h1 {
 
 .home-album-cover img {
   width: 250px;
-  height: auto;
+  height: 250px;
   border-radius: 2%;
   filter: drop-shadow(0 0 0.75rem black);
 }
@@ -574,9 +574,6 @@ h2#download {
 
 .download-links {
   text-align: center;
-}
-
-.download-links a {
   font-size: 1.5rem;
   margin: 0 10px;
 }
@@ -1089,6 +1086,7 @@ body {
   background-color: var(--dark-background);
   color: var(--white);
   font-family: var(--font-text), sans-serif;
+  font-weight: 300;
 }
 
 h1 {

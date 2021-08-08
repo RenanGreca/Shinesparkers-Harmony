@@ -40,7 +40,7 @@
         <link href="<?php echo get_bloginfo('template_url'); ?>/style.css" rel="stylesheet">
         <!-- <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,700,700i" rel="stylesheet"> -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto:wght@300&display=swap"
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto:wght@300;500&display=swap"
               rel="stylesheet">
         <?php wp_site_icon(); ?>
 
@@ -61,7 +61,7 @@
 
                     <div class="brand">
                         <a class="brand-link" href="<?php echo site_url(); ?>" title="Harmony of Shinesparkers">
-                            <img class="logo" src="<?php echo get_bloginfo('template_url') ?>/img/harmony.png"/>
+                            <img class="logo" src="<?php echo get_bloginfo('template_url') ?>/img/harmony-logo.png"/>
                             <!-- <span class="logo-text">HARMONY</span> -->
                         </a>
                         <!-- <p class="logo-text">Neo FUSION</p> -->
