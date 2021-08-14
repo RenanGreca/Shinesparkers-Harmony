@@ -4,7 +4,7 @@
 Plugin Name: Video Gallery - Vimeo and YouTube Gallery
 Plugin URI: https://origincode.co/downloads/video-gallery/
 Description: Build your utmost YouTube Gallery right away with Our Video Gallery plugin.
-Version: 1.1.3
+Version: 1.1.4
 Author: OriginCode
 Author URI: https://origincode.co/
 Domain Path: /languages/
@@ -25,7 +25,7 @@ if ( ! class_exists( 'OriginCode_Gallery_Video' ) ) :
          * Version of plugin
          * @var float
          */
-        public $version = '1.1.3';
+        public $version = '1.1.4';
         /**
          * @var int
          */
@@ -83,7 +83,7 @@ if ( ! class_exists( 'OriginCode_Gallery_Video' ) ) :
         /**
          * Unserializing instances of this class is forbidden.
          */
-        private function __wakeup() {
+        public function __wakeup() {
             _doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?', 'gallery-video' ), '2.1' );
         }
 

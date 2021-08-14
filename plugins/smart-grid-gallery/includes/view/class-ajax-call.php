@@ -183,12 +183,12 @@ class OriginCode_Gallery_Video_Ajax
                     $videourl = origincode_gallery_video_get_video_id_from_url($row->image_url);
                     if ($videourl[1] == 'youtube') {
                         if (empty($row->thumb_url)) {
-                            $thumb_pic = 'https://img.youtube.com/vi/' . $videourl[0] . '/mqdefault.jpg';
+                            $thumb_pic = '//img.youtube.com/vi/' . $videourl[0] . '/mqdefault.jpg';
                         } else {
                             $thumb_pic = $row->thumb_url;
                         }
                         $video = '<img src="' . $thumb_pic . '" alt="" />';
-                        $video_src = 'https://www.youtube.com/embed/' . $videourl[0];
+                        $video_src = '//www.youtube.com/embed/' . $videourl[0];
                     } else {
                         $hash = unserialize(wp_remote_fopen($protocol . "vimeo.com/api/v2/video/" . $videourl[0] . ".php"));
                         if (empty($row->thumb_url)) {
@@ -197,7 +197,7 @@ class OriginCode_Gallery_Video_Ajax
                             $imgsrc = $row->thumb_url;
                         }
                         $video = '<img src="' . $imgsrc . '" alt="" />';
-                        $video_src = 'https://player.vimeo.com/video/' . $videourl[0] . '?title=0&amp;byline=0&amp;portrait=0';
+                        $video_src = '//player.vimeo.com/video/' . $videourl[0] . '?title=0&amp;byline=0&amp;portrait=0';
                     }
 
                     ?>
@@ -313,11 +313,11 @@ class OriginCode_Gallery_Video_Ajax
                     $videourl = origincode_gallery_video_get_video_id_from_url($row->image_url);
                     if ($videourl[1] == 'youtube') {
                         if (empty($row->thumb_url)) {
-                            $thumb_pic = 'https://img.youtube.com/vi/' . $videourl[0] . '/mqdefault.jpg';
+                            $thumb_pic = '//img.youtube.com/vi/' . $videourl[0] . '/mqdefault.jpg';
                         } else {
                             $thumb_pic = $row->thumb_url;
                         }
-                        $video = '<a class="vyoutube origincode_videogallery_item group1"  href="https://www.youtube.com/embed/' . $videourl[0] . '" title="' . $video_name . '">
+                        $video = '<a class="vyoutube origincode_videogallery_item group1"  href="//www.youtube.com/embed/' . $videourl[0] . '" title="' . $video_name . '">
                                     <img src="' . $thumb_pic . '" alt="' . $video_name . '" />
                                     <div class="play-icon ' . $videourl[1] . '-icon"></div>
                                  </a>';
@@ -382,11 +382,11 @@ class OriginCode_Gallery_Video_Ajax
                     $videourl = origincode_gallery_video_get_video_id_from_url($row->image_url);
                     if ($videourl[1] == 'youtube') {
                         if (empty($row->thumb_url)) {
-                            $thumb_pic = 'https://img.youtube.com/vi/' . $videourl[0] . '/mqdefault.jpg';
+                            $thumb_pic = '//img.youtube.com/vi/' . $videourl[0] . '/mqdefault.jpg';
                         } else {
                             $thumb_pic = $row->thumb_url;
                         }
-                        $video = '<a class="vyoutube origincode_videogallery_item group1"  href="https://www.youtube.com/embed/' . $videourl[0] . '" title="' . $video_name . '">
+                        $video = '<a class="vyoutube origincode_videogallery_item group1"  href="//www.youtube.com/embed/' . $videourl[0] . '" title="' . $video_name . '">
                                         <img  src="' . $thumb_pic . '" alt="' . $video_name . '" />
                                         <div class="play-icon ' . $videourl[1] . '-icon"></div>
                                     </a>';
@@ -434,11 +434,11 @@ class OriginCode_Gallery_Video_Ajax
                     $videourl = origincode_gallery_video_get_video_id_from_url($row->image_url);
                     if ($videourl[1] == 'youtube') {
                         if (empty($row->thumb_url)) {
-                            $thumb_pic = 'https://img.youtube.com/vi/' . $videourl[0] . '/mqdefault.jpg';
+                            $thumb_pic = '//img.youtube.com/vi/' . $videourl[0] . '/mqdefault.jpg';
                         } else {
                             $thumb_pic = $row->thumb_url;
                         }
-                        $video = '<a  class="vyoutube origincode_videogallery_item group1"  href="https://www.youtube.com/embed/' . $videourl[0] . '" title="' . $video_name . '"></a>
+                        $video = '<a  class="vyoutube origincode_videogallery_item group1"  href="//www.youtube.com/embed/' . $videourl[0] . '" title="' . $video_name . '"></a>
                                     <img src="' . $thumb_pic . '" alt="' . $video_name . '" />';
                     } else {
 
@@ -518,9 +518,9 @@ class OriginCode_Gallery_Video_Ajax
                     }
                     $videourl = origincode_gallery_video_get_video_id_from_url($row->image_url);
                     if ($videourl[1] == 'youtube') {
-                        $iframe = '<iframe class="video_view9_img" width="' . $origincode_gallery_video_get_option['origincode_gallery_video_video_ht_view9_video_width'] . '" height="' . $origincode_gallery_video_get_option['origincode_gallery_video_video_ht_view9_video_height'] . '" src="https://www.youtube.com/embed/' . $videourl[0] . '" style="border: 0;" allowfullscreen></iframe>';
+                        $iframe = '<iframe class="video_view9_img" width="' . $origincode_gallery_video_get_option['origincode_gallery_video_video_ht_view9_video_width'] . '" height="' . $origincode_gallery_video_get_option['origincode_gallery_video_video_ht_view9_video_height'] . '" src="//www.youtube.com/embed/' . $videourl[0] . '" style="border: 0;" allowfullscreen></iframe>';
                     } else {
-                        $iframe = '<iframe class="video_view9_img" width="' . $origincode_gallery_video_get_option['origincode_gallery_video_video_ht_view9_video_width'] . '" height="' . $origincode_gallery_video_get_option['origincode_gallery_video_video_ht_view9_video_height'] . '" src="https://player.vimeo.com/video/' . $videourl[0] . '"  style="border: 0;" allowfullscreen></iframe>';
+                        $iframe = '<iframe class="video_view9_img" width="' . $origincode_gallery_video_get_option['origincode_gallery_video_video_ht_view9_video_width'] . '" height="' . $origincode_gallery_video_get_option['origincode_gallery_video_video_ht_view9_video_height'] . '" src="//player.vimeo.com/video/' . $videourl[0] . '"  style="border: 0;" allowfullscreen></iframe>';
                     }
                     $icon = origincode_gallery_video_youtube_or_vimeo($row->image_url);
                     if ($video_thumb != '' || !empty($video_thumb) || !$video_thumb) {

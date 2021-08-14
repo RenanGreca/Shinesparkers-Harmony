@@ -34,7 +34,7 @@ $autoload = 'off';
                             }
 
                             if (empty($row->thumb_url)) {
-                                $thumb_pic = 'https://img.youtube.com/vi/' . $videourl[0] . '/mqdefault.jpg';
+                                $thumb_pic = '//img.youtube.com/vi/' . $videourl[0] . '/mqdefault.jpg';
                             } else {
                                 $thumb_pic = $row->thumb_url;
                             }
@@ -42,7 +42,7 @@ $autoload = 'off';
                             <li class="playlist-thumb-container">
                                 <a data-id="<?php echo $row->id; ?>"
                                    class="vyoutube origincode_videogallery_item group<?php echo esc_attr($origincode_gallery_videoID); ?>"
-                                   href="https://www.youtube.com/embed/<?php echo $videourl[0] . $rel_videos; ?>"
+                                   href="//www.youtube.com/embed/<?php echo $videourl[0] . $rel_videos; ?>"
                                    title="<?php echo str_replace('__5_5_5__', '%', $row->name); ?>" >
                                     <div class="vid-thumb"><img src="<?php echo esc_attr($thumb_pic); ?>"
                                                                 alt="<?php echo str_replace('__5_5_5__', '%', $row->name); ?>"
@@ -65,7 +65,7 @@ $autoload = 'off';
                             <li class="playlist-thumb-container">
                                 <a class="vvimeo origincode_videogallery_item group<?php echo esc_attr($origincode_gallery_videoID); ?>"
                                    data-id="<?php echo esc_attr($row->id); ?>"
-                                   href="https://player.vimeo.com/video/<?php if ($autoload == 'on') {
+                                   href="//player.vimeo.com/video/<?php if ($autoload == 'on') {
                                        if (get_option('origincode_gallery_video_lightbox_type') === 'old_type') {
                                            $videourl[0] .= '?autoplay=1';
                                        } else {
@@ -126,7 +126,7 @@ $autoload = 'off';
                                }
 
                                if (empty($row->thumb_url)) {
-                                   $thumb_pic = 'https://img.youtube.com/vi/' . $videourl[0] . '/mqdefault.jpg';
+                                   $thumb_pic = '//img.youtube.com/vi/' . $videourl[0] . '/mqdefault.jpg';
                                } else {
                                    $thumb_pic = $row->thumb_url;
                                }
@@ -134,7 +134,7 @@ $autoload = 'off';
                                <li class="playlist-thumb-container">
                                    <a data-id="<?php echo $row->id; ?>"
                                       class="vyoutube origincode_videogallery_item group<?php echo esc_attr($origincode_gallery_videoID); ?>"
-                                      href="https://www.youtube.com/embed/<?php echo $videourl[0] . $rel_videos; ?>"
+                                      href="//www.youtube.com/embed/<?php echo $videourl[0] . $rel_videos; ?>"
                                       title="<?php echo str_replace('__5_5_5__', '%', $row->name); ?>">
                                        <div class="vid-thumb"><img src="<?php echo esc_attr($thumb_pic); ?>" alt="<?php echo str_replace('__5_5_5__', '%', $row->name); ?>"/></div>
                                        <div class="playlist-thumb-desc  <?php if (!strlen($row->name) && !strlen($row->description)) {echo 'empty_desc';}?>" >
@@ -155,7 +155,7 @@ $autoload = 'off';
                                <li class="playlist-thumb-container">
                                    <a class="vvimeo origincode_videogallery_item group<?php echo esc_attr($origincode_gallery_videoID); ?>"
                                       data-id="<?php echo esc_attr($row->id); ?>"
-                                      href="https://player.vimeo.com/video/<?php if ($autoload == 'on') {
+                                      href="//player.vimeo.com/video/<?php if ($autoload == 'on') {
                                           if (get_option('origincode_gallery_video_lightbox_type') === 'old_type') {
                                               $videourl[0] .= '?autoplay=1';
                                           } else {

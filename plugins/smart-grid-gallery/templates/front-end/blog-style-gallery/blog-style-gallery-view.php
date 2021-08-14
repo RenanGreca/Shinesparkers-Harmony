@@ -38,7 +38,7 @@
 								<iframe class="video_view9_img <?php echo $iframe_thumbclass; ?>"
 								        width="<?php echo $origincode_gallery_video_get_option['origincode_gallery_video_video_ht_view9_video_width']; ?>"
 								        height="<?php echo $origincode_gallery_video_get_option['origincode_gallery_video_video_ht_view9_video_height']; ?>"
-								        src="https://www.youtube.com/embed/<?php echo esc_attr($videourl[0]); ?>" style="border: 0;"
+								        src="//www.youtube.com/embed/<?php echo esc_attr($videourl[0]); ?>" style="border: 0;"
 								        allowfullscreen></iframe>
 								<?php
 							} else {
@@ -46,7 +46,7 @@
 								<iframe class="video_view9_img <?php echo esc_attr($iframe_thumbclass); ?>"
 								        width="<?php echo $origincode_gallery_video_get_option['origincode_gallery_video_video_ht_view9_video_width']; ?>"
 								        height="<?php echo $origincode_gallery_video_get_option['origincode_gallery_video_video_ht_view9_video_height']; ?>"
-								        src="https://player.vimeo.com/video/<?php echo esc_attr($videourl[0]); ?>" style="border: 0;"
+								        src="//player.vimeo.com/video/<?php echo esc_attr($videourl[0]); ?>" style="border: 0;"
 								        allowfullscreen></iframe>
 								<?php
 							}
@@ -79,7 +79,7 @@
 								<iframe class="video_view9_img <?php echo esc_attr($iframe_thumbclass); ?>"
 								        width="<?php echo $origincode_gallery_video_get_option['origincode_gallery_video_video_ht_view9_video_width']; ?>"
 								        height="<?php echo $origincode_gallery_video_get_option['origincode_gallery_video_video_ht_view9_video_height']; ?>"
-								        src="https://www.youtube.com/embed/<?php echo esc_attr($videourl[0]); ?>" style="border: 0;"
+								        src="//www.youtube.com/embed/<?php echo esc_attr($videourl[0]); ?>" style="border: 0;"
 								        allowfullscreen></iframe>
 								<?php
 							} else {
@@ -87,7 +87,7 @@
 								<iframe class="video_view9_img <?php echo esc_attr($iframe_thumbclass); ?>"
 								        width="<?php echo $origincode_gallery_video_get_option['origincode_gallery_video_video_ht_view9_video_width']; ?>"
 								        height="<?php echo $origincode_gallery_video_get_option['origincode_gallery_video_video_ht_view9_video_height']; ?>"
-								        src="https://player.vimeo.com/video/<?php echo esc_attr($videourl[0]); ?>" style="border: 0;"
+								        src="//player.vimeo.com/video/<?php echo esc_attr($videourl[0]); ?>" style="border: 0;"
 								        allowfullscreen></iframe>
 								<?php
 							}
@@ -119,7 +119,7 @@
 								<iframe class="video_view9_img <?php echo esc_attr($iframe_thumbclass); ?>"
 								        width="<?php echo $origincode_gallery_video_get_option['origincode_gallery_video_video_ht_view9_video_width']; ?>"
 								        height="<?php echo $origincode_gallery_video_get_option['origincode_gallery_video_video_ht_view9_video_height']; ?>"
-								        src="https://www.youtube.com/embed/<?php echo esc_attr($videourl[0]); ?>" style="border: 0;"
+								        src="//www.youtube.com/embed/<?php echo esc_attr($videourl[0]); ?>" style="border: 0;"
 								        allowfullscreen></iframe>
 								<?php
 							} else {
@@ -127,7 +127,7 @@
 								<iframe class="video_view9_img <?php echo esc_attr($iframe_thumbclass); ?>"
 								        width="<?php echo $origincode_gallery_video_get_option['origincode_gallery_video_video_ht_view9_video_width']; ?>"
 								        height="<?php echo $origincode_gallery_video_get_option['origincode_gallery_video_video_ht_view9_video_height']; ?>"
-								        src="https://player.vimeo.com/video/<?php echo esc_attr($videourl[0]); ?>" style="border: 0;"
+								        src="//player.vimeo.com/video/<?php echo esc_attr($videourl[0]); ?>" style="border: 0;"
 								        allowfullscreen></iframe>
 								<?php
 							}

@@ -24,13 +24,13 @@
                         $videourl = origincode_gallery_video_get_video_id_from_url($row->image_url);
                         if ($videourl[1] == 'youtube') {
                             if (empty($row->thumb_url)) {
-                                $thumb_pic = esc_url('https://img.youtube.com/vi/' .$videourl[0]. '/mqdefault.jpg');
+                                $thumb_pic = esc_url('//img.youtube.com/vi/' .$videourl[0]. '/mqdefault.jpg');
                             } else {
                                 $thumb_pic = $row->thumb_url;
                             }
                             ?>
                             <a class="vyoutube origincode_videogallery_item group<?php echo esc_attr($origincode_gallery_videoID); ?>"
-                               href="<?php echo esc_url("https://www.youtube.com/embed/". $videourl[0]); ?>"
+                               href="<?php echo esc_url("//www.youtube.com/embed/". $videourl[0]); ?>"
                                title="<?php echo str_replace('__5_5_5__', '%', $row->name); ?>"
                                data-description="<?php echo str_replace('__5_5_5__', '%', $row->description); ?>"
                                data-id="<?php echo esc_attr($row->id); ?>">
@@ -48,7 +48,7 @@
                             }
                             ?>
                             <a class="vvimeo origincode_videogallery_item group<?php echo esc_attr($origincode_gallery_videoID); ?>"
-                               href="<?php  echo esc_url("https://player.vimeo.com/video/". $videourl[0]); ?>"
+                               href="<?php  echo esc_url("//player.vimeo.com/video/". $videourl[0]); ?>"
                                title="<?php echo str_replace('__5_5_5__', '%', $row->name); ?>"
                                data-description="<?php echo str_replace('__5_5_5__', '%', $row->description); ?>"
                                data-id="<?php echo esc_attr($row->id); ?>">

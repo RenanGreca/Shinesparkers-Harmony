@@ -96,7 +96,7 @@ $add_video_nonce                               = wp_create_nonce( 'origincode_ga
 													if ( strpos( $rowimages->image_url, 'youtube' ) !== false || strpos( $rowimages->image_url, 'youtu' ) !== false ) {
 														$liclass         = "youtube";
 														$video_thumb_url = get_youtube_id_from_url( $rowimages->image_url );
-														$thumburl        = '<img src="https://img.youtube.com/vi/' . $video_thumb_url . '/mqdefault.jpg" alt="" />';
+														$thumburl        = '<img src="//img.youtube.com/vi/' . $video_thumb_url . '/mqdefault.jpg" alt="" />';
 													} else if ( strpos( $rowimages->image_url, 'vimeo' ) !== false ) {
 														$liclass  = "vimeo";
 														$vimeo    = $rowimages->image_url;

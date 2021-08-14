@@ -1369,7 +1369,7 @@
 
         if (isVideo.youtube) {
 
-            video = '<iframe class="' + this.dataL.modulSettings.classPrefix + 'video-object ' + this.dataL.modulSettings.classPrefix + 'youtube ' + addClass + '" width="560" height="315" src="https://www.youtube.com/embed/' + isVideo.youtube[1] + '" frameborder="0" allowfullscreen></iframe>';
+            video = '<iframe class="' + this.dataL.modulSettings.classPrefix + 'video-object ' + this.dataL.modulSettings.classPrefix + 'youtube ' + addClass + '" width="560" height="315" src="//www.youtube.com/embed/' + isVideo.youtube[1] + '" frameborder="0" allowfullscreen></iframe>';
 
         } else if (isVideo.vimeo) {
 
@@ -2022,9 +2022,9 @@
 
             if (isVideo.youtube || isVideo.vimeo || isVideo.dailymotion) {
                 if (isVideo.youtube) {
-                    thumbImg = 'https://img.youtube.com/vi/' + isVideo.youtube[1] + '/1.jpg';
+                    thumbImg = '//img.youtube.com/vi/' + isVideo.youtube[1] + '/1.jpg';
                 } else if (isVideo.vimeo) {
-                    thumbImg = 'https://i.vimeocdn.com/video/error_' + vimeoErrorThumbSize + '.jpg';
+                    thumbImg = '//i.vimeocdn.com/video/error_' + vimeoErrorThumbSize + '.jpg';
                     vimeoId = isVideo.vimeo[1];
                 }
             } else {
@@ -2050,7 +2050,7 @@
             var vimeoVideoId = $this.attr('data-vimeo-id');
 
             if (vimeoVideoId) {
-                $.getJSON('https://www.vimeo.com/api/v2/video/' + vimeoVideoId + '.json?callback=?', {
+                $.getJSON('//www.vimeo.com/api/v2/video/' + vimeoVideoId + '.json?callback=?', {
                     format: 'json'
                 }, function (data) {
                     $this.find('img').attr('src', data[0]['thumbnail_small']);

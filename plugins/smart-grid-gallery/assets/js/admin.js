@@ -70,16 +70,16 @@ jQuery(document).ready(function () {
             video_url: videoUrl,
             insertVideoNonce: insertVideoNonce
         };
-        jQuery.post(ajax_object_admin, data, function (response) {
+        jQuery.post(ajax_object_admin.url, data, function (response) {
             response = JSON.parse(response);
             var videoId = response.video_id;
             var videoType = response.video_type;
             var newVideoUrl;
             if (videoType == 'youtube') {
-                newVideoUrl = 'https://www.youtube.com/embed/' + videoId + '?modestbranding=1&showinfo=0&controls=0';
+                newVideoUrl = '//www.youtube.com/embed/' + videoId + '?modestbranding=1&showinfo=0&controls=0';
             }
             if (videoType == 'vimeo') {
-                newVideoUrl = 'https://player.vimeo.com/video/' + videoId + '?title=0&amp;byline=0&amp;portrait=0';
+                newVideoUrl = '//player.vimeo.com/video/' + videoId + '?title=0&amp;byline=0&amp;portrait=0';
             }
             jQuery('.gallery-video-iframe-area').attr('src', newVideoUrl);
         });
@@ -97,17 +97,17 @@ jQuery(document).ready(function () {
             editVideoNonce: editVideoNonce,
             videoUniqueId: videoUniqueId
         };
-        jQuery.post(ajax_object_admin, data, function (response) {
+        jQuery.post(ajax_object_admin.url, data, function (response) {
             jQuery('#TB_window').css('overflow', 'hidden');
             response = JSON.parse(response);
             var videoId = response.video_id;
             var videoType = response.video_type;
             var newVideoUrl;
             if (videoType == 'youtube') {
-                newVideoUrl = 'https://www.youtube.com/embed/' + videoId + '?modestbranding=1&showinfo=0&controls=0';
+                newVideoUrl = '//www.youtube.com/embed/' + videoId + '?modestbranding=1&showinfo=0&controls=0';
             }
             if (videoType == 'vimeo') {
-                newVideoUrl = 'https://player.vimeo.com/video/' + videoId + '?title=0&amp;byline=0&amp;portrait=0';
+                newVideoUrl = '//player.vimeo.com/video/' + videoId + '?title=0&amp;byline=0&amp;portrait=0';
             }
             jQuery('.gallery-video-iframe-area').attr('src', newVideoUrl);
             jQuery('form#form-edit-video').attr('data-gallery-video-id', galleryVideoId);

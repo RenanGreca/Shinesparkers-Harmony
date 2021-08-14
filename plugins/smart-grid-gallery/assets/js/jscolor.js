@@ -231,7 +231,7 @@ var jscolor = {
 		this.toString = function() {
 			var result = '';
 			if(this.scheme !== null) { result = result + this.scheme + ':'; }
-			if(this.authority !== null) { result = result + 'https://' + this.authority; }
+			if(this.authority !== null) { result = result + '//' + this.authority; }
 			if(this.path !== null) { result = result + this.path; }
 			if(this.query !== null) { result = result + '?' + this.query; }
 			if(this.fragment !== null) { result = result + '#' + this.fragment; }

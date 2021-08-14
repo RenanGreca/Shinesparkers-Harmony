@@ -42,7 +42,7 @@ jQuery(document).ready(function () {
             insertShortecodeNonce: insertShortecodeNonce
         };
 
-        jQuery.post(ajax_object_shortecode, data, function (response) {
+        jQuery.post(ajax_object_shortecode.url, data, function (response) {
         });
 
         window.send_to_editor('[origincode_videogallery id="' + id + '"]');
@@ -112,7 +112,7 @@ jQuery(document).ready(function () {
             id: gal_sel,
             changeShortecodeViewNonce: changeShortecodeViewNonce
         };
-        jQuery.post(ajax_object_shortecode, data, function (response) {
+        jQuery.post(ajax_object_shortecode.url, data, function (response) {
             response = JSON.parse(response);
             jQuery('#origincode_sl_effects').val(response.origincode_sl_effects);
             jQuery('#origincode_sl_effects').change();

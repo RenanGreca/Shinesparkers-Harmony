@@ -750,7 +750,7 @@ window.addEventListener('blur',function() {
 									</div>
 								<?php else : ?>
 									<div class="thumb_wrapper" data-rowid="<?php echo $video_row->id; ?>" onclick="thevid=document.getElementById('thevideo'); thevid.style.display='block'; this.style.display='none'">
-										<img  class="thumb_image" src="https://i.ytimg.com/vi/<?php echo $video_thumb_url; ?>/hqdefault.jpg">
+										<img  class="thumb_image" src="//i.ytimg.com/vi/<?php echo $video_thumb_url; ?>/hqdefault.jpg">
 										<div class="playbutton <?php echo $icon;?>-icon"></div>
 									</div>
 								<?php endif;?>
@@ -761,7 +761,7 @@ window.addEventListener('blur',function() {
 								$imgid =  end($vimeo_explode);
 								?>
                                 <div id="thevideo" style="display: block;" class="thevideo">
-                                    <iframe id="player_<?php echo $key ;?>"  class="origincode_video_frame_videogallery_<?php echo $origincode_gallery_videoID; ?> framvideo vimeo" src="https://player.vimeo.com/video/<?php echo $imgid; ?>?api=1&amp;player_id=player_<?php echo $key ;?>&amp;showinfo=0&amp;controls=0" style="border: 0;" allowfullscreen></iframe>
+                                    <iframe id="player_<?php echo $key ;?>"  class="origincode_video_frame_videogallery_<?php echo $origincode_gallery_videoID; ?> framvideo vimeo" src="//player.vimeo.com/video/<?php echo $imgid; ?>?api=1&amp;player_id=player_<?php echo $key ;?>&amp;showinfo=0&amp;controls=0" style="border: 0;" allowfullscreen></iframe>
                                 </div>
 								<?php if($video_thumb != ''): ?>
 									<div class="thumb_wrapper" data-rowid="<?php echo $video_row->id; ?>" onclick="thevid=document.getElementById('thevideo'); thevid.style.display='block'; this.style.display='none'">

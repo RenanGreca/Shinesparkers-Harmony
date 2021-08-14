@@ -375,8 +375,9 @@ a.delete-link {
  
 #videogallerys-list li {
 	display: inline-block;
-	margin: 0 5px 0 0;
+	margin: 0 10px 0 0;
 	padding: 0 0 0 0;
+	vertical-align: bottom;
 }
 
 #videogallerys-list li.add-new a:before {
@@ -389,7 +390,7 @@ a.delete-link {
 	margin-top: -4px;
 }
 
-#videogallerys-list  li.add-new a {
+#videogallerys-list li.add-new a {
 	font-size: 37px;
 	line-height: 37px;
 	font-weight: bold;
@@ -409,7 +410,7 @@ a.delete-link {
 }
 
 
-#videogallerys-list  li.active {
+#videogallerys-list li.active {
 	border-bottom: 1px solid #fff;
 	padding-right: 16px;
 	background-position: right center;
@@ -418,40 +419,40 @@ a.delete-link {
 
 
 
-#videogallerys-list  li a,#videogallerys-list  li a:link,#videogallerys-list  li a:visited {
+#videogallerys-list li a,#videogallerys-list li a:link,#videogallerys-list li a:visited {
 	display: block;
 	text-decoration: none;
 	padding: 10px 10px 0px 10px;
 	outline: none;
-	font-family: "Roboto";
+	font-family: Open Sans, sans-serif;
 	font-size: 16px;
-	font-weight: 500;
+	font-weight: bold;
 	color: #505050;
 	height: 34px;
 	outline:none;
 	box-shadow:none;
 }
 
-#videogallerys-list  li a:hover,#videogallerys-list  li a:focus,#videogallerys-list  li a:active {
+#videogallerys-list li a:hover,#videogallerys-list  li a:focus,#videogallerys-list  li a:active {
 	color: rgb(18, 121, 185);
 	outline:none;
 	box-shadow:none;
 }
 
-#videogallerys-list  li.add-new a:hover,#videogallerys-list  li.add-new a:focus,#videogallerys-list  li.add-new a:active {
+#videogallerys-list li.add-new a:hover,#videogallerys-list  li.add-new a:focus,#videogallerys-list  li.add-new a:active {
 	cursor:pointer;
 	outline:none;
 	box-shadow:none;
 }
 	
-#videogallerys-list  li.active input {
+#videogallerys-list li.active input {
 	outline: none;
 	width: auto;
 	box-shadow: none;
 	color: #6590ff;
-	font-family: "Roboto";
+	font-family: Open Sans, sans-serif;
 	font-size: 16px;
-	font-weight: 500;
+	font-weight: bold;
 	height: auto;
 	border: 1px solid #d0d6dc;
 	line-height: 44px;
@@ -460,6 +461,8 @@ a.delete-link {
 	padding-left: 20px;
 	background-position: 3px 3px!important;
 	padding-right: 27px;
+	margin-bottom: -2px;
+	vertical-align: bottom;
 }
 
 
@@ -493,7 +496,7 @@ a.delete-link {
 /*CONTENT*/
 
 #videogallery-header {
-	margin-bottom:30px;
+	margin-bottom:20px;
 }
 
 #post-body-heading {
@@ -622,9 +625,9 @@ a.delete-link {
 	height:100%;	
 }
 
-#images-list  .play-icon.youtube {background:url('../images/admin_images/play.youtube.png') 10px 6px  no-repeat;}
+#images-list  .play-icon.youtube {background:url('../images/admin_images/play.youtube.png') 50% 6px  no-repeat;}
 
-#images-list  .play-icon.vimeo {background:url('../images/admin_images/play.vimeo.png') 10px 6px  no-repeat;}
+#images-list  .play-icon.vimeo {background:url('../images/admin_images/play.vimeo.png') 50% 6px  no-repeat;}
 
 
 #images-list .image-options > div {

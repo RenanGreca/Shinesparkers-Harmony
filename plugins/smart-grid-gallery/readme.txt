@@ -3,8 +3,8 @@ Contributors: origincode
 Donate link: https://origincode.co/downloads/video-gallery/
 Tags: video gallery, YouTube Gallery, WP Video Gallery, WordPress Video Gallery, video gallery plugin
 Requires at least: 4.9
-Tested up to: 5.7.1
-Stable tag: 1.1.3
+Tested up to: 5.8
+Stable tag: 1.1.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 

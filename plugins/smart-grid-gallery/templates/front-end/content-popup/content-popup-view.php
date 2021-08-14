@@ -24,7 +24,7 @@
                         $videourl = origincode_gallery_video_get_video_id_from_url($row->image_url);
                         if ($videourl[1] == 'youtube') {
                             if (empty($row->thumb_url)) {
-                                $thumb_pic = 'https://img.youtube.com/vi/' . $videourl[0] . '/mqdefault.jpg';
+                                $thumb_pic = '//img.youtube.com/vi/' . $videourl[0] . '/mqdefault.jpg';
                             } else {
                                 $thumb_pic = $row->thumb_url;
                             }
@@ -160,7 +160,7 @@
                         <div class="hg_iframe_class">
                             <div class="hg_iframe_class_sub"></div>
                             <iframe class="hg_iframe_class"
-                                    src="<?php  echo esc_url("https://www.youtube.com/embed/". $videourl[0]); ?>" style="border: 0;"
+                                    src="<?php  echo esc_url("//www.youtube.com/embed/". $videourl[0]); ?>" style="border: 0;"
                                     allowfullscreen></iframe>
                         </div>
                         <?php
@@ -169,7 +169,7 @@
                         <div class="hg_iframe_class">
                             <div class="hg_iframe_class_sub"></div>
                             <iframe
-                                src="<?php echo esc_url("https://player.vimeo.com/video/".$videourl[0]); ?>?title=0&amp;byline=0&amp;portrait=0"
+                                src="<?php echo esc_url("//player.vimeo.com/video/".$videourl[0]); ?>?title=0&amp;byline=0&amp;portrait=0"
                                 style="border: 0;" allowfullscreen></iframe>
                         </div>
                         <?php
